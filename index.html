@@ -38,34 +38,12 @@
     .section-heading span {color:#2563eb; font-size:13px; font-weight:800; text-transform:uppercase;}
     .section-heading h2 {font-size:32px; margin-top:8px; color:#0f172a;}
     .section-heading p {max-width:680px; margin:auto; color:#64748b;}
-    .about-grid {max-width:1120px; margin:auto; display:grid; grid-template-columns:1.2fr 0.8fr; gap:40px;}
-    .about-text {background:#fff; border:1px solid #e2e8f0; border-radius:18px; padding:30px; box-shadow:0 10px 30px rgba(15,23,42,0.08);}
-    .about-list {display:grid; gap:12px;}
-    .about-item {background:#fff; border:1px solid #e2e8f0; border-radius:14px; padding:18px;}
-    .about-item strong {display:block; color:#0f172a;}
-    .about-item span {color:#64748b; font-size:14px;}
-    .service-grid {max-width:1120px; margin:auto; display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
-    .service-card {background:#fff; border:1px solid #e2e8f0; border-radius:18px; padding:25px; text-align:left;}
-    .service-icon {width:45px; height:45px; border-radius:12px; background:#eff6ff; color:#2563eb; display:flex; align-items:center; justify-content:center; font-weight:800; margin-bottom:15px;}
-    .projects {background:#f8fafc;}
     .project-grid {max-width:1120px; margin:auto; display:grid; gap:25px;}
     .project-card {background:#fff; border:1px solid #e2e8f0; border-radius:18px; padding:25px; box-shadow:0 10px 30px rgba(15,23,42,0.08);}
     .project-card h3 {color:#0f172a; font-size:22px; margin-bottom:10px;}
+    .project-card img {width:100%; border-radius:12px; margin-top:10px;}
     .tags {display:flex; gap:8px; flex-wrap:wrap; margin-top:12px;}
     .tag {background:#f1f5f9; border-radius:999px; padding:6px 10px; font-size:12px; font-weight:600; color:#334155;}
-    .skills {background:#fff;}
-    .skill-grid {max-width:1120px; margin:auto; display:grid; grid-template-columns:repeat(2,1fr); gap:20px;}
-    .skill-card {background:#fff; border:1px solid #e2e8f0; border-radius:18px; padding:25px;}
-    .skill-card h3 {margin-bottom:12px; color:#0f172a;}
-    .skill-list {display:flex; flex-wrap:wrap; gap:8px;}
-    .skill {background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:7px 11px; font-size:13px;}
-    .timeline {max-width:900px; margin:auto; display:grid; gap:20px;}
-    .timeline-card {background:#fff; border:1px solid #e2e8f0; border-radius:18px; padding:25px;}
-    .timeline-card h3 {color:#0f172a; font-size:20px;}
-    .timeline-card .company {color:#2563eb; font-weight:700;}
-    .timeline-card .date {color:#64748b; font-size:13px; margin-bottom:10px;}
-    .cert-grid {max-width:1120px; margin:auto; display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
-    .cert-card {background:#fff; border:1px solid #e2e8f0; border-radius:18px; padding:20px;}
     .contact {background:#0f172a; color:#fff; padding:60px 0;}
     .contact-grid {max-width:900px; margin:auto; display:grid; grid-template-columns:repeat(2,1fr); gap:20px;}
     .contact-card {background:#162033; border:1px solid #344054; border-radius:18px; padding:25px;}
@@ -75,8 +53,59 @@
   </style>
 </head>
 <body>
+  <!-- NAVBAR -->
   <nav>
     <div class="nav-container">
       <a href="#home" class="brand">Parthiban V<span>.</span></a>
       <ul class="nav-links">
-        <li><a href="#home">Home</a></li><li><a href="#about">About</a></
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-grid">
+      <div>
+        <h1>Analytics that turns <span>data into direction.</span></h1>
+        <h2>Data Analyst • MIS • Business Analytics</h2>
+        <p>I'm Parthiban V, a B.Com Computer Applications graduate passionate about transforming raw data into meaningful insights using Excel, SQL and Power BI.</p>
+        <div class="hero-buttons">
+          <a href="Parthiban_V_Resume.pdf" class="btn btn-primary" target="_blank">Download Resume</a>
+          <a href="https://www.linkedin.com/in/parthibanv23" class="btn btn-outline" target="_blank">LinkedIn</a>
+          <a href="https://github.com/parthibanvofficial02" class="btn btn-outline" target="_blank">GitHub</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="profile-circle">PV</div>
+        <h3>Parthiban V</h3>
+        <p>B.Com Computer Applications · 2026 Graduate</p>
+        <div class="stats">
+          <div class="stat"><strong>8.28</strong><span>CGPA</span></div>
+          <div class="stat"><strong>3+</strong><span>Analytics Projects</span></div>
+          <div class="stat"><strong>4+</strong><span>Core Tools</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <div class="section-heading">
+      <span>Projects</span>
+      <h2>Analytics Projects</h2>
+      <p>Real datasets transformed into dashboards and reports.</p>
+    </div>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Blinkit Retail Sales & Inventory Analytics</h3>
+        <p>Built sales and inventory dashboards to analyze outlet performance and category-wise trends.</p>
+        <img src="https://github.com/parthibanvofficial02/blinkit-retail-analytics/blob/main/blinkit-dashboard.png?raw=true" alt="Blinkit Dashboard Preview">
+        <div class="tags"><span class="tag">Excel</span><span class="tag">Power BI</span></div>
+      </div>
+      <div class="project-card">
+        <h3>PhonePe Digital Payment Analytics</h3>
