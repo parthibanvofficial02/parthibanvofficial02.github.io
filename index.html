@@ -1,69 +1,1460 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Parthiban V — Data Analytics, Reporting, Operations Analytics and MIS portfolio">
-<title>Parthiban V | Analytics Portfolio</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<meta name="description" content="Parthiban V — Data Analyst portfolio featuring Excel, SQL, Power BI, MIS Reporting, Operations Analytics and Business Intelligence projects.">
+
+<meta name="keywords" content="Parthiban V, Data Analyst, Data Analytics, Excel, SQL, Power BI, MIS Executive, Business Analyst, Operations Analyst, Chennai">
+
+<meta name="author" content="Parthiban V">
+
+<title>Parthiban V | Data Analyst Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+
 <style>
-:root{--bg:#f7f8fa;--surface:#fff;--ink:#101828;--muted:#667085;--line:#e4e7ec;--accent:#155eef;--soft:#eef4ff;--max:1160px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",Arial,sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}.wrap{max-width:var(--max);margin:auto;padding:0 26px}
-nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.nav{height:70px;display:flex;justify-content:space-between;align-items:center}.logo{font:800 20px Manrope}.logo b{color:var(--accent)}.navlinks{display:flex;gap:24px;color:var(--muted);font-size:14px}.navlinks a:hover{color:var(--accent)}
-.hero{background:#fff;border-bottom:1px solid var(--line);padding:92px 0 72px}.hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:55px;align-items:end}.kicker{font-size:12px;text-transform:uppercase;letter-spacing:2px;font-weight:700;color:var(--accent)}h1,h2,h3{font-family:Manrope;margin:0}h1{font-size:clamp(44px,6vw,74px);line-height:1.03;letter-spacing:-3px;margin:15px 0}.hero h1 span{color:var(--accent)}.lead{font-size:19px;color:var(--muted);max-width:760px}.buttons{display:flex;flex-wrap:wrap;gap:11px;margin-top:28px}.btn{border:1px solid var(--line);padding:12px 17px;border-radius:10px;font-weight:700;font-size:14px;background:#fff}.btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}.mini{border-left:3px solid var(--accent);padding-left:20px}.mini strong{display:block;font:700 31px Manrope}.mini span{color:var(--muted);font-size:13px}
-.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:48px}.metric{border:1px solid var(--line);background:#fff;border-radius:13px;padding:18px}.metric strong{font:800 25px Manrope;display:block}.metric span{color:var(--muted);font-size:13px}
-section{padding:82px 0}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:28px}.section-title{font-size:34px;letter-spacing:-1px}.section-sub{color:var(--muted);max-width:680px;margin:7px 0 0}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{background:var(--surface);border:1px solid var(--line);border-radius:17px;padding:25px;box-shadow:0 6px 22px rgba(16,24,40,.035)}.card:hover{box-shadow:0 12px 30px rgba(16,24,40,.07)}.number{color:var(--accent);font:800 13px Manrope}.card h3{font-size:21px;margin:11px 0 8px}.card p{font-size:14px;color:var(--muted);margin:0}.tags{margin-top:18px}.tag{display:inline-block;background:var(--soft);color:#174ea6;border-radius:999px;padding:5px 9px;font-size:11px;font-weight:700;margin:3px}
-.case{margin-top:16px}.case b{font-size:12px}.case div{font-size:13px;color:var(--muted);margin-top:3px}
-.proj-links{margin-top:18px;display:flex;gap:14px;flex-wrap:wrap}.proj-links a{font-weight:700;color:var(--accent);font-size:13px;border-bottom:1px solid var(--accent);padding-bottom:2px}.proj-links a:hover{opacity:.7}
-.proj-img{display:block;width:100%;height:170px;object-fit:cover;object-position:top;border-radius:12px;border:1px solid var(--line);margin-bottom:16px;background:#f2f4f7}.proj-note{font-size:12.5px;color:var(--muted);margin-top:10px}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:17px}.skillbox{border:1px solid var(--line);border-radius:17px;background:#fff;padding:23px}.skillbox h3{font-size:18px;margin-bottom:14px}.chips{display:flex;flex-wrap:wrap;gap:7px}.chip{font-size:12px;background:#f2f4f7;border:1px solid #eaecf0;border-radius:8px;padding:7px 9px}
-.timeline{border-left:2px solid #dbe4f0;margin:8px 0 0 10px;padding-left:28px}.event{position:relative;margin-bottom:34px}.event:before{content:"";position:absolute;left:-35px;top:7px;width:10px;height:10px;background:var(--accent);border-radius:50%;box-shadow:0 0 0 5px var(--bg)}.event .meta{font-size:11px;letter-spacing:1px;color:var(--accent);font-weight:800}.event h3{font-size:20px;margin:5px 0}.event p{color:var(--muted);font-size:14px;margin:0}
-.about{display:grid;grid-template-columns:1.25fr .75fr;gap:17px}.quote{background:#101828;color:#fff;border-radius:17px;padding:30px}.quote p{font:600 20px Manrope;line-height:1.4}.quote small{color:#98a2b3}.checklist{padding-left:18px;color:var(--muted);font-size:14px}
-.contact{background:#101828;color:#fff}.contact .section-sub{color:#98a2b3}.contact-card{border:1px solid #344054;border-radius:17px;padding:26px;background:#162033}.contact-card a{color:#9ec1ff}.contactgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.contactitem{padding:14px;border:1px solid #344054;border-radius:11px}.contactitem small{display:block;color:#98a2b3;margin-bottom:2px}
-footer{padding:30px 0;background:#0b1220;color:#98a2b3;font-size:13px}.foot{display:flex;justify-content:space-between;gap:15px}
-@media(max-width:850px){.hero-grid,.about,.two{grid-template-columns:1fr}.grid3{grid-template-columns:1fr 1fr}.metrics{grid-template-columns:1fr 1fr}.navlinks{display:none}}
-@media(max-width:560px){.grid3,.metrics,.contactgrid{grid-template-columns:1fr}.hero{padding-top:65px}h1{letter-spacing:-2px}.section-head{display:block}}
+
+:root{
+--bg:#f7f8fa;
+--surface:#fff;
+--ink:#101828;
+--muted:#667085;
+--line:#e4e7ec;
+--accent:#155eef;
+--soft:#eef4ff;
+--max:1160px
+}
+
+*{
+box-sizing:border-box
+}
+
+html{
+scroll-behavior:smooth
+}
+
+body{
+margin:0;
+background:var(--bg);
+color:var(--ink);
+font-family:"DM Sans",Arial,sans-serif;
+line-height:1.65
+}
+
+a{
+color:inherit;
+text-decoration:none
+}
+
+.wrap{
+max-width:var(--max);
+margin:auto;
+padding:0 26px
+}
+
+/* NAVIGATION */
+
+nav{
+position:sticky;
+top:0;
+z-index:20;
+background:rgba(255,255,255,.92);
+backdrop-filter:blur(14px);
+border-bottom:1px solid var(--line)
+}
+
+.nav{
+height:70px;
+display:flex;
+justify-content:space-between;
+align-items:center
+}
+
+.logo{
+font:800 20px Manrope
+}
+
+.logo b{
+color:var(--accent)
+}
+
+.navlinks{
+display:flex;
+gap:24px;
+color:var(--muted);
+font-size:14px
+}
+
+.navlinks a{
+transition:.2s
+}
+
+.navlinks a:hover{
+color:var(--accent)
+}
+
+/* HERO */
+
+.hero{
+background:#fff;
+border-bottom:1px solid var(--line);
+padding:92px 0 72px
+}
+
+.hero-grid{
+display:grid;
+grid-template-columns:1.35fr .65fr;
+gap:55px;
+align-items:end
+}
+
+.kicker{
+font-size:12px;
+text-transform:uppercase;
+letter-spacing:2px;
+font-weight:700;
+color:var(--accent)
+}
+
+h1,h2,h3{
+font-family:Manrope;
+margin:0
+}
+
+h1{
+font-size:clamp(44px,6vw,74px);
+line-height:1.03;
+letter-spacing:-3px;
+margin:15px 0
+}
+
+.hero h1 span{
+color:var(--accent)
+}
+
+.lead{
+font-size:19px;
+color:var(--muted);
+max-width:760px
+}
+
+.buttons{
+display:flex;
+flex-wrap:wrap;
+gap:11px;
+margin-top:28px
+}
+
+.btn{
+border:1px solid var(--line);
+padding:12px 17px;
+border-radius:10px;
+font-weight:700;
+font-size:14px;
+background:#fff;
+transition:.2s
+}
+
+.btn:hover{
+transform:translateY(-2px);
+box-shadow:0 6px 18px rgba(16,24,40,.08)
+}
+
+.btn.primary{
+background:var(--accent);
+color:#fff;
+border-color:var(--accent)
+}
+
+.btn.primary:hover{
+opacity:.92
+}
+
+.mini{
+border-left:3px solid var(--accent);
+padding-left:20px
+}
+
+.mini strong{
+display:block;
+font:700 31px Manrope
+}
+
+.mini span{
+color:var(--muted);
+font-size:13px
+}
+
+/* METRICS */
+
+.metrics{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:12px;
+margin-top:48px
+}
+
+.metric{
+border:1px solid var(--line);
+background:#fff;
+border-radius:13px;
+padding:18px;
+transition:.2s
+}
+
+.metric:hover{
+transform:translateY(-3px);
+box-shadow:0 10px 25px rgba(16,24,40,.06)
+}
+
+.metric strong{
+font:800 25px Manrope;
+display:block
+}
+
+.metric span{
+color:var(--muted);
+font-size:13px
+}
+
+/* SECTIONS */
+
+section{
+padding:82px 0
+}
+
+.section-head{
+display:flex;
+justify-content:space-between;
+gap:30px;
+align-items:end;
+margin-bottom:28px
+}
+
+.section-title{
+font-size:34px;
+letter-spacing:-1px
+}
+
+.section-sub{
+color:var(--muted);
+max-width:680px;
+margin:7px 0 0
+}
+
+/* CARDS */
+
+.grid3{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:17px
+}
+
+.card{
+background:var(--surface);
+border:1px solid var(--line);
+border-radius:17px;
+padding:25px;
+box-shadow:0 6px 22px rgba(16,24,40,.035);
+transition:.25s
+}
+
+.card:hover{
+transform:translateY(-4px);
+box-shadow:0 14px 32px rgba(16,24,40,.08)
+}
+
+.number{
+color:var(--accent);
+font:800 13px Manrope
+}
+
+.card h3{
+font-size:21px;
+margin:11px 0 8px
+}
+
+.card p{
+font-size:14px;
+color:var(--muted);
+margin:0 0 10px
+}
+
+/* TAGS */
+
+.tags{
+margin-top:18px
+}
+
+.tag{
+display:inline-block;
+background:var(--soft);
+color:#174ea6;
+border-radius:999px;
+padding:5px 9px;
+font-size:11px;
+font-weight:700;
+margin:3px
+}
+
+/* PROJECT */
+
+.case{
+margin-top:16px
+}
+
+.case b{
+font-size:12px
+}
+
+.case div{
+font-size:13px;
+color:var(--muted);
+margin-top:3px
+}
+
+.proj-links{
+margin-top:18px;
+display:flex;
+gap:14px;
+flex-wrap:wrap
+}
+
+.proj-links a{
+font-weight:700;
+color:var(--accent);
+font-size:13px;
+border-bottom:1px solid var(--accent);
+padding-bottom:2px
+}
+
+.proj-links a:hover{
+opacity:.7
+}
+
+.proj-img{
+display:block;
+width:100%;
+height:170px;
+object-fit:cover;
+object-position:top;
+border-radius:12px;
+border:1px solid var(--line);
+margin-bottom:16px;
+background:#f2f4f7
+}
+
+.proj-note{
+font-size:12.5px;
+color:var(--muted);
+margin-top:10px
+}
+
+/* INSIGHTS */
+
+.insights{
+margin-top:18px;
+padding-top:15px;
+border-top:1px solid var(--line)
+}
+
+.insights b{
+font-size:12px
+}
+
+.insights ul{
+margin:7px 0 0;
+padding-left:18px;
+color:var(--muted);
+font-size:13px
+}
+
+.insights li{
+margin-bottom:4px
+}
+
+/* WHAT I CAN DO */
+
+.capability-card{
+background:#fff;
+border:1px solid var(--line);
+border-radius:17px;
+padding:25px;
+transition:.25s
+}
+
+.capability-card:hover{
+transform:translateY(-4px);
+box-shadow:0 14px 32px rgba(16,24,40,.07)
+}
+
+.capability-icon{
+font-size:25px;
+margin-bottom:10px
+}
+
+.capability-card h3{
+font-size:19px;
+margin-bottom:7px
+}
+
+.capability-card p{
+font-size:14px;
+color:var(--muted);
+margin:0
+}
+
+.capabilities{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:17px
+}
+
+/* SKILLS */
+
+.two{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:17px
+}
+
+.skillbox{
+border:1px solid var(--line);
+border-radius:17px;
+background:#fff;
+padding:23px;
+transition:.2s
+}
+
+.skillbox:hover{
+box-shadow:0 10px 25px rgba(16,24,40,.06)
+}
+
+.skillbox h3{
+font-size:18px;
+margin-bottom:14px
+}
+
+.chips{
+display:flex;
+flex-wrap:wrap;
+gap:7px
+}
+
+.chip{
+font-size:12px;
+background:#f2f4f7;
+border:1px solid #eaecf0;
+border-radius:8px;
+padding:7px 9px
+}
+
+/* TIMELINE */
+
+.timeline{
+border-left:2px solid #dbe4f0;
+margin:8px 0 0 10px;
+padding-left:28px
+}
+
+.event{
+position:relative;
+margin-bottom:34px
+}
+
+.event:before{
+content:"";
+position:absolute;
+left:-35px;
+top:7px;
+width:10px;
+height:10px;
+background:var(--accent);
+border-radius:50%;
+box-shadow:0 0 0 5px var(--bg)
+}
+
+.event .meta{
+font-size:11px;
+letter-spacing:1px;
+color:var(--accent);
+font-weight:800
+}
+
+.event h3{
+font-size:20px;
+margin:5px 0
+}
+
+.event p{
+color:var(--muted);
+font-size:14px;
+margin:0
+}
+
+/* ABOUT */
+
+.about{
+display:grid;
+grid-template-columns:1.25fr .75fr;
+gap:17px
+}
+
+.quote{
+background:#101828;
+color:#fff;
+border-radius:17px;
+padding:30px
+}
+
+.quote p{
+font:600 20px Manrope;
+line-height:1.4
+}
+
+.quote small{
+color:#98a2b3
+}
+
+.checklist{
+padding-left:18px;
+color:var(--muted);
+font-size:14px
+}
+
+/* CERTIFICATIONS */
+
+.cert-card{
+background:#fff;
+border:1px solid var(--line);
+border-radius:17px;
+padding:25px;
+transition:.2s
+}
+
+.cert-card:hover{
+transform:translateY(-3px);
+box-shadow:0 10px 25px rgba(16,24,40,.06)
+}
+
+.cert-card h3{
+font-size:19px;
+margin-bottom:7px
+}
+
+.cert-card p{
+font-size:14px;
+color:var(--muted);
+margin:0
+}
+
+.cert-link{
+display:inline-block;
+margin-top:13px;
+font-size:13px;
+font-weight:700;
+color:var(--accent);
+border-bottom:1px solid var(--accent)
+}
+
+/* CTA */
+
+.cta{
+background:#eef4ff;
+border-top:1px solid #dbe7ff;
+border-bottom:1px solid #dbe7ff
+}
+
+.cta-box{
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:25px
+}
+
+.cta h2{
+font-size:30px
+}
+
+.cta p{
+color:var(--muted);
+margin:6px 0 0
+}
+
+/* CONTACT */
+
+.contact{
+background:#101828;
+color:#fff
+}
+
+.contact .section-sub{
+color:#98a2b3
+}
+
+.contact-card{
+border:1px solid #344054;
+border-radius:17px;
+padding:26px;
+background:#162033
+}
+
+.contact-card a{
+color:#9ec1ff
+}
+
+.contactgrid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:12px
+}
+
+.contactitem{
+padding:14px;
+border:1px solid #344054;
+border-radius:11px
+}
+
+.contactitem small{
+display:block;
+color:#98a2b3;
+margin-bottom:2px
+}
+
+/* FOOTER */
+
+footer{
+padding:30px 0;
+background:#0b1220;
+color:#98a2b3;
+font-size:13px
+}
+
+.foot{
+display:flex;
+justify-content:space-between;
+gap:15px
+}
+
+/* RESPONSIVE */
+
+@media(max-width:950px){
+
+.hero-grid{
+grid-template-columns:1fr
+}
+
+.grid3,
+.capabilities{
+grid-template-columns:1fr 1fr
+}
+
+}
+
+@media(max-width:850px){
+
+.about,
+.two{
+grid-template-columns:1fr
+}
+
+.metrics{
+grid-template-columns:1fr 1fr
+}
+
+.navlinks{
+display:none
+}
+
+.cta-box{
+display:block
+}
+
+.cta-box .btn{
+margin-top:18px
+}
+
+}
+
+@media(max-width:560px){
+
+.grid3,
+.metrics,
+.contactgrid,
+.capabilities{
+grid-template-columns:1fr
+}
+
+.hero{
+padding-top:65px
+}
+
+h1{
+letter-spacing:-2px
+}
+
+.section-head{
+display:block
+}
+
+.section-title{
+font-size:30px
+}
+
+.lead{
+font-size:17px
+}
+
+.buttons{
+flex-direction:column;
+align-items:flex-start
+}
+
+.btn{
+width:100%;
+text-align:center
+}
+
+.foot{
+display:block
+}
+
+.foot span{
+display:block;
+margin-bottom:7px
+}
+
+}
+
 </style>
 </head>
+
 <body>
-<nav><div class="wrap nav"><a class="logo" href="#top">PARTHIBAN<b>.</b></a><div class="navlinks"><a href="#about">About</a><a href="#work">Work</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div></div></nav>
 
-<header id="top" class="hero"><div class="wrap hero-grid">
-<div><div class="kicker">B.Com Computer Applications · 2026 Graduate</div><h1>Analytics that turns<br><span>data into direction.</span></h1>
-<p class="lead">I'm Parthiban V — an analytics-focused graduate building practical solutions in Excel, SQL and Power BI across reporting, operations and business intelligence.</p>
-<div class="buttons"><a class="btn primary" href="#work">View Selected Work</a><a class="btn" href="Parthiban_V_Resume.pdf" download>Download Resume</a><a class="btn" href="https://www.linkedin.com/in/parthibanv23" target="_blank">LinkedIn ↗</a></div></div>
-<div class="mini"><strong>8.28</strong><span>CGPA · B.Com (Computer Applications)</span><br><strong>3</strong><span>Business analytics projects</span></div>
-</div><div class="wrap metrics"><div class="metric"><strong>Excel</strong><span>Advanced reporting toolkit</span></div><div class="metric"><strong>SQL</strong><span>MySQL analysis</span></div><div class="metric"><strong>Power BI</strong><span>Interactive dashboards</span></div><div class="metric"><strong>ApproTech</strong><span>Data Analytics Intern</span></div></div></header>
+<!-- NAVIGATION -->
 
-<section id="about"><div class="wrap"><div class="section-head"><div><h2 class="section-title">Profile</h2><p class="section-sub">Business-oriented analytics profile with a practical focus on reporting, data quality and decision support.</p></div></div>
-<div class="about"><div class="card"><p>I am a B.Com (Computer Applications) graduate from S.I.V.E.T. College, University of Madras. My foundation combines commerce and business understanding with hands-on analytics skills in Microsoft Excel, SQL (MySQL), Power BI and Tally Prime.</p><p>I enjoy turning raw business data into structured reports, dashboards and insights that are easier for teams to understand and act on.</p></div><div class="quote"><p>"Clean data. Clear reporting. Better business decisions."</p><small>Focus areas: Data Analytics · Reporting · Operations · Business Intelligence · MIS</small></div></div></div></section>
+<nav>
+<div class="wrap nav">
 
-<section id="work"><div class="wrap"><div class="section-head"><div><h2 class="section-title">Selected Work</h2><p class="section-sub">Project work demonstrating analysis, reporting and dashboard development.</p></div></div>
+<a class="logo" href="#top">
+PARTHIBAN<b>.</b>
+</a>
+
+<div class="navlinks">
+<a href="#about">About</a>
+<a href="#capabilities">What I Do</a>
+<a href="#work">Projects</a>
+<a href="#skills">Skills</a>
+<a href="#experience">Experience</a>
+<a href="#contact">Contact</a>
+</div>
+
+</div>
+</nav>
+
+
+<!-- HERO -->
+
+<header id="top" class="hero">
+
+<div class="wrap hero-grid">
+
+<div>
+
+<div class="kicker">
+B.Com Computer Applications · 2026 Graduate
+</div>
+
+<h1>
+Analytics that turns<br>
+<span>data into direction.</span>
+</h1>
+
+<p class="lead">
+I'm Parthiban V — an analytics-focused graduate who transforms raw business data into structured reports, interactive dashboards and actionable insights using Excel, SQL and Power BI.
+</p>
+
+<div class="buttons">
+
+<a class="btn primary" href="#work">
+View Selected Work
+</a>
+
+<a class="btn" href="Parthiban_V_Resume.pdf" download>
+Download Resume
+</a>
+
+<a class="btn" href="https://www.linkedin.com/in/parthibanv23" target="_blank" rel="noopener">
+LinkedIn ↗
+</a>
+
+<a class="btn" href="https://github.com/parthibanvofficial02" target="_blank" rel="noopener">
+GitHub ↗
+</a>
+
+</div>
+
+</div>
+
+
+<div class="mini">
+
+<strong>8.28</strong>
+<span>CGPA · B.Com (Computer Applications)</span>
+
+<br>
+
+<strong>3</strong>
+<span>Business analytics projects</span>
+
+<br>
+
+<strong>1</strong>
+<span>Data Analytics Internship</span>
+
+</div>
+
+</div>
+
+
+<div class="wrap metrics">
+
+<div class="metric">
+<strong>Excel</strong>
+<span>Advanced reporting toolkit</span>
+</div>
+
+<div class="metric">
+<strong>SQL</strong>
+<span>MySQL data analysis</span>
+</div>
+
+<div class="metric">
+<strong>Power BI</strong>
+<span>Interactive dashboards</span>
+</div>
+
+<div class="metric">
+<strong>ApproTech</strong>
+<span>Data Analytics Intern</span>
+</div>
+
+</div>
+
+</header>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<div class="wrap">
+
+<div class="section-head">
+
+<div>
+
+<h2 class="section-title">
+Profile
+</h2>
+
+<p class="section-sub">
+Business-oriented analytics profile with a practical focus on reporting, data quality, dashboard development and decision support.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="about">
+
+<div class="card">
+
+<p>
+I am a B.Com (Computer Applications) graduate from S.I.V.E.T. College, University of Madras. My foundation combines commerce and business understanding with hands-on analytics skills in Microsoft Excel, SQL (MySQL), Power BI and Tally Prime.
+</p>
+
+<p>
+I enjoy turning raw business data into structured reports, dashboards and insights that are easier for teams to understand and act on.
+</p>
+
+<ul class="checklist">
+
+<li>Business-focused data analysis</li>
+
+<li>Excel-based MIS and reporting</li>
+
+<li>SQL data extraction and analysis</li>
+
+<li>Power BI dashboard development</li>
+
+<li>Operations and performance analytics</li>
+
+</ul>
+
+</div>
+
+
+<div class="quote">
+
+<p>
+"Clean data. Clear reporting. Better business decisions."
+</p>
+
+<small>
+Focus areas: Data Analytics · Reporting · Operations · Business Intelligence · MIS
+</small>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- WHAT I CAN DO -->
+
+<section id="capabilities">
+
+<div class="wrap">
+
+<div class="section-head">
+
+<div>
+
+<h2 class="section-title">
+What I Can Do
+</h2>
+
+<p class="section-sub">
+Practical analytics capabilities I can apply to reporting, business and operations-focused roles.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="capabilities">
+
+<div class="capability-card">
+
+<div class="capability-icon">📊</div>
+
+<h3>
+Data Analysis
+</h3>
+
+<p>
+Analyze business data to identify trends, patterns, performance gaps and opportunities for better decision-making.
+</p>
+
+</div>
+
+
+<div class="capability-card">
+
+<div class="capability-icon">🧹</div>
+
+<h3>
+Data Cleaning
+</h3>
+
+<p>
+Clean, validate, transform and prepare raw datasets using Excel and Power Query for reliable analysis.
+</p>
+
+</div>
+
+
+<div class="capability-card">
+
+<div class="capability-icon">🗄️</div>
+
+<h3>
+SQL Analytics
+</h3>
+
+<p>
+Use SQL joins, aggregations, CTEs, subqueries and window functions to extract meaningful business insights.
+</p>
+
+</div>
+
+
+<div class="capability-card">
+
+<div class="capability-icon">📈</div>
+
+<h3>
+Dashboard Development
+</h3>
+
+<p>
+Build interactive Power BI dashboards with KPIs, slicers, data models and business-focused visualizations.
+</p>
+
+</div>
+
+
+<div class="capability-card">
+
+<div class="capability-icon">📋</div>
+
+<h3>
+MIS & Reporting
+</h3>
+
+<p>
+Create structured MIS reports and management-ready summaries using Excel, Pivot Tables and Power BI.
+</p>
+
+</div>
+
+
+<div class="capability-card">
+
+<div class="capability-icon">💼</div>
+
+<h3>
+Business & Operations Analytics
+</h3>
+
+<p>
+Use data to understand sales, transactions, customers, operations and performance to support business decisions.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PROJECTS -->
+
+<section id="work">
+
+<div class="wrap">
+
+<div class="section-head">
+
+<div>
+
+<h2 class="section-title">
+Selected Work
+</h2>
+
+<p class="section-sub">
+Practical projects demonstrating data cleaning, SQL analysis, reporting and interactive dashboard development.
+</p>
+
+</div>
+
+</div>
+
+
 <div class="grid3">
-<article class="card"><img class="proj-img" src="https://raw.githubusercontent.com/parthibanvofficial02/blinkit-retail-analytics/main/blinkit-dashboard.png" alt="Blinkit retail analytics dashboard preview" loading="lazy"><span class="number">01 · RETAIL ANALYTICS</span><h3>Blinkit Retail Sales & Inventory Analytics</h3><p>Built sales and inventory dashboards to analyze outlet performance and category-wise trends. Cleaned and transformed business data using Excel and Power Query.</p><div class="case"><b>FOCUS</b><div>Outlet performance · Category trends · Inventory reporting</div></div><div class="case"><b>SCALE</b><div>8 linked datasets — orders, inventory, delivery & marketing performance</div></div><div class="tags"><span class="tag">Excel</span><span class="tag">Power Query</span><span class="tag">Power BI</span></div><div class="proj-links"><a href="https://github.com/parthibanvofficial02/blinkit-retail-analytics" target="_blank">View on GitHub ↗</a><a href="https://github.com/parthibanvofficial02/blinkit-retail-analytics/blob/main/blinkit-dashboard.png" target="_blank">View Dashboard ↗</a></div></article>
-<article class="card"><span class="number">02 · PAYMENT ANALYTICS</span><h3>PhonePe Digital Payment Analytics</h3><p>Analyzed digital payment transactions and generated business reports using SQL and Excel. Created Pivot Table reports to identify transaction trends and customer activity.</p><div class="case"><b>FOCUS</b><div>Transactions · Trends · Customer activity</div></div><div class="case"><b>SCALE</b><div>300K+ transaction records · 107K+ user records analyzed</div></div><div class="tags"><span class="tag">MySQL</span><span class="tag">Excel</span><span class="tag">Pivot Tables</span></div></article>
-<article class="card"><img class="proj-img" src="https://raw.githubusercontent.com/parthibanvofficial02/uber-operations-dashboard/main/screenshot.png" alt="Ride bookings operations dashboard preview" loading="lazy"><span class="number">03 · OPERATIONS ANALYTICS</span><h3>Uber Operations Performance Dashboard</h3><p>Developed dashboards to monitor ride demand, booking trends, cancellations and operational performance. Generated reports to support business decisions.</p><div class="case"><b>FOCUS</b><div>Demand · Bookings · Cancellations · Performance</div></div><div class="case"><b>SCALE</b><div>150,000-row NCR ride bookings dataset analyzed with SQL</div></div><div class="tags"><span class="tag">SQL</span><span class="tag">Power BI</span><span class="tag">Dashboard</span></div><div class="proj-links"><a href="https://github.com/parthibanvofficial02/uber-operations-dashboard" target="_blank">View on GitHub ↗</a><a href="https://github.com/parthibanvofficial02/uber-operations-dashboard/blob/main/screenshot.png" target="_blank">View Dashboard ↗</a></div></article>
-</div></div></section>
 
-<section id="skills"><div class="wrap"><div class="section-head"><div><h2 class="section-title">Technical Toolkit</h2><p class="section-sub">Core capabilities aligned with analyst, reporting and operations-focused fresher roles.</p></div></div>
+
+<!-- BLINKIT -->
+
+<article class="card">
+
+<img
+class="proj-img"
+src="https://raw.githubusercontent.com/parthibanvofficial02/blinkit-retail-analytics/main/blinkit-dashboard.png"
+alt="Blinkit retail analytics dashboard preview"
+loading="lazy"
+>
+
+<span class="number">
+01 · RETAIL ANALYTICS
+</span>
+
+<h3>
+Blinkit Retail Sales & Inventory Analytics
+</h3>
+
+<p>
+Built a retail analytics dashboard to understand sales performance, outlet-level trends, product categories and inventory-related metrics.
+</p>
+
+<div class="case">
+
+<b>OBJECTIVE</b>
+
+<div>
+Convert raw retail data into an interactive dashboard for performance monitoring and business analysis.
+</div>
+
+</div>
+
+
+<div class="case">
+
+<b>WHAT I DID</b>
+
+<div>
+Cleaned and transformed data using Excel and Power Query, performed analysis and developed an interactive Power BI dashboard.
+</div>
+
+</div>
+
+
+<div class="case">
+
+<b>FOCUS</b>
+
+<div>
+Outlet performance · Category trends · Inventory reporting
+</div>
+
+</div>
+
+
+<div class="case">
+
+<b>SCALE</b>
+
+<div>
+8 linked datasets — orders, inventory, delivery & marketing performance
+</div>
+
+</div>
+
+
+<div class="insights">
+
+<b>KEY INSIGHTS</b>
+
+<ul>
+
+<li>Compared performance across different outlet segments.</li>
+
+<li>Analyzed category-level sales contribution.</li>
+
+<li>Evaluated retail performance using dashboard KPIs.</li>
+
+</ul>
+
+</div>
+
+
+<div class="tags">
+
+<span class="tag">Excel</span>
+<span class="tag">Power Query</span>
+<span class="tag">Power BI</span>
+<span class="tag">Dashboard</span>
+
+</div>
+
+
+<div class="proj-links">
+
+<a
+href="https://github.com/parthibanvofficial02/blinkit-retail-analytics"
+target="_blank"
+rel="noopener"
+>
+GitHub ↗
+</a>
+
+<a
+href="https://github.com/parthibanvofficial02/blinkit-retail-analytics/blob/main/blinkit-dashboard.png"
+target="_blank"
+rel="noopener"
+>
+Dashboard ↗
+</a>
+
+</div>
+
+</article>
+
+
+<!-- PHONEPE -->
+
+<article class="card">
+
+<span class="number">
+02 · PAYMENT ANALYTICS
+</span>
+
+<h3>
+PhonePe Digital Payment Analytics
+</h3>
+
+<p>
+Analyzed digital payment transactions and user activity using MySQL and Excel to identify transaction trends and business performance patterns.
+</p>
+
+
+<div class="case">
+
+<b>OBJECTIVE</b>
+
+<div>
+Understand transaction volume, transaction value and user activity through structured SQL analysis and Excel reporting.
+</div>
+
+</div>
+
+
+<div class="case">
+
+<b>WHAT I DID</b>
+
+<div>
+Cleaned and validated data, wrote SQL queries, performed aggregations and created Pivot Table reports for business analysis.
+</div>
+
+</div>
+
+
+<div class="case">
+
+<b>FOCUS</b>
+
+<div>
+Transactions · Trends · Customer activity · Transaction value
+</div>
+
+</div>
+
+
+<div class="case">
+
+<b>SCALE</b>
+
+<div>
+300K+ transaction records · 107K+ user records analyzed
+</div>
+
+</div>
+
+
+<div class="insights">
+
+<b>KEY INSIGHTS</b>
+
+<ul>
+
+<li>Analyzed transaction trends across different periods.</li>
+
+<li>Compared user activity and transaction behavior.</li>
+
+<li>Identified high-value transaction segments.</li>
+
+</ul>
+
+</div>
+
+
+<div class="tags">
+
+<span class="tag">MySQL</span>
+<span class="tag">SQL</span>
+<span class="tag">Excel</span>
+<span class="tag">Pivot Tables</span>
+
+</div>
+
+
+<div class="proj-links">
+
+<!-- Replace the placeholder URL below with your actual PhonePe GitHub repository -->
+
+<a
+href="https://github.com/parthibanvofficial02"
+target="_blank"
+rel="noopener"
+>
+GitHub ↗
+</a>
+
+</div>
+
+<p class="proj-note">
+PhonePe project repository link can be updated once the dedicated GitHub repository is published.
+</p>
+
+</article>
+
+
+<!-- UBER -->
+
+<article class="card">
+
+<img
+class="proj-img"
+src="https://raw.githubusercontent.com/parthibanvofficial02/uber-operations-dashboard/main/screenshot.png"
+alt="Uber operations performance dashboard preview"
+loading="lazy"
+>
+
+<span class="number">
+03 · OPERATIONS ANALYTICS
+</span>
+
+<h3>
+Uber Operations Performance Dashboard
+</h3>
+
+<p>
+Developed an operations dashboard to monitor ride demand, bookings, cancellations and overall booking performance.
+</p>
+
+
+<div class="case">
+
+<b>OBJECTIVE</b>
+
+<div>
+Analyze ride-booking data and convert operational metrics into an interactive Power BI dashboard.
+</div>
+
+</div>
+
+
+<div class="case">
+
+<b>WHAT I DID</b>
+
+<div>
+Prepared the dataset, used SQL for analysis and created Power BI visuals to monitor operational KPIs.
+</div>
+
+</div>
+
+
+<div class="case">
+
+<b>FOCUS</b>
+
+<div>
+Demand · Bookings · Cancellations · Performance
+</div>
+
+</div>
+
+
+<div class="case">
+
+<b>SCALE</b>
+
+<div>
+150,000-row NCR ride bookings dataset analyzed with SQL
+</div>
+
+</div>
+
+
+<div class="insights">
+
+<b>KEY INSIGHTS</b>
+
+<ul>
+
+<li>Analyzed ride demand and booking patterns.</li>
+
+<li>Evaluated cancellation trends.</li>
+
+<li>Compared operational performance across segments.</li>
+
+</ul>
+
+</div>
+
+
+<div class="tags">
+
+<span class="tag">SQL</span>
+<span class="tag">MySQL</span>
+<span class="tag">Power BI</span>
+<span class="tag">Dashboard</span>
+
+</div>
+
+
+<div class="proj-links">
+
+<a
+href="https://github.com/parthibanvofficial02/uber-operations-dashboard"
+target="_blank"
+rel="noopener"
+>
+GitHub ↗
+</a>
+
+<a
+href="https://github.com/parthibanvofficial02/uber-operations-dashboard/blob/main/screenshot.png"
+target="_blank"
+rel="noopener"
+>
+Dashboard ↗
+</a>
+
+</div>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+<div class="wrap">
+
+<div class="section-head">
+
+<div>
+
+<h2 class="section-title">
+Technical Toolkit
+</h2>
+
+<p class="section-sub">
+Core tools and capabilities aligned with Data Analyst, MIS, Reporting and Operations-focused fresher roles.
+</p>
+
+</div>
+
+</div>
+
+
 <div class="two">
-<div class="skillbox"><h3>Microsoft Excel</h3><div class="chips"><span class="chip">Pivot Tables</span><span class="chip">Pivot Charts</span><span class="chip">XLOOKUP</span><span class="chip">VLOOKUP</span><span class="chip">INDEX-MATCH</span><span class="chip">Power Query</span><span class="chip">Data Cleaning</span><span class="chip">Dashboard Development</span><span class="chip">Conditional Formatting</span></div></div>
-<div class="skillbox"><h3>SQL · MySQL</h3><div class="chips"><span class="chip">Joins</span><span class="chip">Aggregations</span><span class="chip">GROUP BY</span><span class="chip">HAVING</span><span class="chip">Subqueries</span><span class="chip">CTEs</span><span class="chip">Views</span><span class="chip">ROW_NUMBER()</span><span class="chip">RANK()</span><span class="chip">DENSE_RANK()</span></div></div>
-<div class="skillbox"><h3>Power BI</h3><div class="chips"><span class="chip">Data Modeling</span><span class="chip">DAX Basics</span><span class="chip">KPI Cards</span><span class="chip">Slicers</span><span class="chip">Drill Through</span><span class="chip">Interactive Dashboards</span></div></div>
-<div class="skillbox"><h3>Business & Tools</h3><div class="chips"><span class="chip">MIS Reporting</span><span class="chip">Business Reporting</span><span class="chip">Operational Reporting</span><span class="chip">Business Intelligence</span><span class="chip">Data Visualization</span><span class="chip">Tally Prime</span><span class="chip">Basic Python</span><span class="chip">Microsoft Office</span></div></div>
-</div></div></section>
 
-<section id="experience"><div class="wrap"><div class="section-head"><div><h2 class="section-title">Experience & Education</h2><p class="section-sub">Academic foundation, internship exposure and demonstrated leadership.</p></div></div>
-<div class="timeline">
-<div class="event"><div class="meta">INTERNSHIP · APPROTECH, TAMBARAM</div><h3>Data Analytics Intern</h3><p>Prepared MIS reports, validated datasets, performed data cleaning and supported dashboard development using Excel and Power BI.</p></div>
-<div class="event"><div class="meta">2023 — 2026 · UNIVERSITY OF MADRAS</div><h3>Bachelor of Commerce (Computer Applications)</h3><p>S.I.V.E.T. College · CGPA 8.28 · No Active Arrears.</p></div>
-<div class="event"><div class="meta">LEADERSHIP · 3 CONSECUTIVE YEARS</div><h3>Class Representative</h3><p>Elected Class Representative and organized departmental events including Logo Connection and Blind Folded competitions.</p></div>
-<div class="event"><div class="meta">ACHIEVEMENTS</div><h3>Best Manager Winner · Essay Competition Cash Prize Winner</h3><p>Additional evidence of communication, leadership and competitive problem-solving.</p></div>
-</div></div></section>
 
-<section><div class="wrap"><div class="section-head"><div><h2 class="section-title">Certifications</h2><p class="section-sub">Credentials listed in the resume.</p></div></div><div class="grid3"><div class="card"><h3>Advanced Data Analytics</h3><p>Analytics-focused certification.</p></div><div class="card"><h3>Microsoft Excel · SQL · Power BI</h3><p>Core analytics credentials.</p></div><div class="card"><h3>IBM AI · Cloud Computing · Tally Prime</h3><p>Additional technology and business-tool credentials.</p></div></div></div></section>
+<div class="skillbox">
 
-<section id="contact" class="contact"><div class="wrap"><div class="section-head"><div><h2 class="section-title">Open to Opportunities</h2><p class="section-sub">Interested in Data Analytics, Reporting, Operations Analytics, Business Analytics, RevOps, Marketing Analytics and MIS opportunities.</p></div></div>
-<div class="contact-card"><div class="contactgrid"><div class="contactitem"><small>EMAIL</small><a href="mailto:parthibanvofficial02@gmail.com">parthibanvofficial02@gmail.com</a></div><div class="contactitem"><small>PHONE</small><span>+91 6383171150</span></div><div class="contactitem"><small>LINKEDIN</small><a href="https://www.linkedin.com/in/parthibanv23" target="_blank">linkedin.com/in/parthibanv23</a></div><div class="contactitem"><small>LOCATION</small><span>Singaperumal Kovil, Tamil Nadu</span></div></div></div></div></section>
-<footer><div class="wrap foot"><span>© 2026 Parthiban V</span><span>Data · Reporting · Operations · Business Intelligence</span></div></footer>
-</body></html>
+<h3>
+Microsoft Excel
+</h3>
+
+<div class="chips">
+
+<span class="chip">Pivot Tables</span>
+<span class="chip">Pivot Charts</span>
+<span class="chip">XLOOKUP</span>
+<span class="chip">VLOOKUP</span>
+<span class="chip">INDEX-MATCH</span>
+<span class="chip">Power Query</span>
+<span class="chip">Data Cleaning</spa
