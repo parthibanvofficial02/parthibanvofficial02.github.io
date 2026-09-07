@@ -1,1044 +1,2044 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <meta name="description"
-    content="Parthiban V - B.Com Computer Applications graduate and aspiring Data Analyst specializing in Excel, SQL, Power BI, MIS Reporting and Business Analytics.">
-
-  <meta name="keywords"
-    content="Parthiban V, Data Analyst, MIS Executive, Business Analyst, Excel, SQL, Power BI, Chennai">
-
-  <meta name="author" content="Parthiban V">
-
-  <meta property="og:title" content="Parthiban V | Data Analyst Portfolio">
-  <meta property="og:description"
-    content="Data Analytics, MIS Reporting, SQL, Excel and Power BI Portfolio">
-  <meta property="og:type" content="website">
-
-  <title>Parthiban V | Data Analyst | MIS | Business Analytics</title>
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-
-    :root {
-      --primary: #2563eb;
-      --primary-dark: #1d4ed8;
-      --dark: #0f172a;
-      --text: #334155;
-      --muted: #64748b;
-      --light: #f8fafc;
-      --white: #ffffff;
-      --border: #e2e8f0;
-      --card: #ffffff;
-      --shadow: 0 15px 40px rgba(15, 23, 42, 0.08);
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: var(--light);
-      color: var(--text);
-      line-height: 1.7;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
-    .container {
-      width: 90%;
-      max-width: 1150px;
-      margin: auto;
-    }
-
-    /* ================= NAVBAR ================= */
-
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 1000;
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid var(--border);
-    }
-
-    .nav-inner {
-      height: 72px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .brand {
-      font-size: 24px;
-      font-weight: 800;
-      color: var(--dark);
-    }
-
-    .brand span {
-      color: var(--primary);
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 25px;
-      list-style: none;
-    }
-
-    .nav-links a {
-      font-size: 14px;
-      font-weight: 600;
-      color: var(--text);
-      transition: 0.3s;
-    }
-
-    .nav-links a:hover {
-      color: var(--primary);
-    }
-
-    /* ================= HERO ================= */
-
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      padding: 110px 0 70px;
-      background:
-        radial-gradient(circle at top right, rgba(37, 99, 235, 0.12), transparent 35%),
-        linear-gradient(135deg, #f8fafc, #eef4ff);
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.4fr 0.6fr;
-      gap: 60px;
-      align-items: center;
-    }
-
-    .badge {
-      display: inline-block;
-      background: #dbeafe;
-      color: var(--primary-dark);
-      padding: 8px 15px;
-      border-radius: 30px;
-      font-size: 13px;
-      font-weight: 700;
-      margin-bottom: 20px;
-    }
-
-    .hero h1 {
-      font-size: clamp(42px, 6vw, 70px);
-      line-height: 1.05;
-      color: var(--dark);
-      margin-bottom: 20px;
-    }
-
-    .hero h1 span {
-      color: var(--primary);
-    }
-
-    .hero h2 {
-      font-size: 23px;
-      color: #475569;
-      margin-bottom: 18px;
-      font-weight: 600;
-    }
-
-    .hero p {
-      max-width: 680px;
-      color: var(--muted);
-      font-size: 17px;
-      margin-bottom: 28px;
-    }
-
-    .buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 12px 20px;
-      border-radius: 8px;
-      font-weight: 700;
-      font-size: 14px;
-      transition: 0.3s;
-      border: 1px solid transparent;
-    }
-
-    .btn-primary {
-      background: var(--primary);
-      color: white;
-    }
-
-    .btn-primary:hover {
-      background: var(--primary-dark);
-      transform: translateY(-2px);
-    }
-
-    .btn-outline {
-      border-color: var(--border);
-      background: white;
-      color: var(--dark);
-    }
-
-    .btn-outline:hover {
-      border-color: var(--primary);
-      color: var(--primary);
-      transform: translateY(-2px);
-    }
-
-    .hero-card {
-      background: white;
-      border: 1px solid var(--border);
-      border-radius: 22px;
-      padding: 28px;
-      box-shadow: var(--shadow);
-    }
-
-    .hero-card h3 {
-      color: var(--dark);
-      margin-bottom: 18px;
-    }
-
-    .stat {
-      display: flex;
-      justify-content: space-between;
-      padding: 14px 0;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .stat:last-child {
-      border-bottom: none;
-    }
-
-    .stat strong {
-      color: var(--dark);
-    }
-
-    .stat span {
-      color: var(--muted);
-    }
-
-    /* ================= COMMON ================= */
-
-    section {
-      padding: 90px 0;
-    }
-
-    .section-title {
-      text-align: center;
-      margin-bottom: 50px;
-    }
-
-    .section-title h2 {
-      color: var(--dark);
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
-
-    .section-title p {
-      color: var(--muted);
-      max-width: 650px;
-      margin: auto;
-    }
-
-    /* ================= ABOUT ================= */
-
-    .about {
-      background: white;
-    }
-
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 50px;
-      align-items: center;
-    }
-
-    .about h3 {
-      font-size: 28px;
-      color: var(--dark);
-      margin-bottom: 18px;
-    }
-
-    .about p {
-      color: var(--muted);
-      margin-bottom: 15px;
-    }
-
-    .check-list {
-      list-style: none;
-    }
-
-    .check-list li {
-      background: var(--light);
-      padding: 13px 16px;
-      border-radius: 8px;
-      margin-bottom: 10px;
-      border-left: 4px solid var(--primary);
-      font-weight: 600;
-    }
-
-    /* ================= WHAT I DO ================= */
-
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-
-    .service-card {
-      background: var(--card);
-      padding: 28px;
-      border-radius: 15px;
-      border: 1px solid var(--border);
-      transition: 0.3s;
-    }
-
-    .service-card:hover {
-      transform: translateY(-6px);
-      box-shadow: var(--shadow);
-      border-color: #bfdbfe;
-    }
-
-    .service-icon {
-      width: 45px;
-      height: 45px;
-      border-radius: 10px;
-      background: #dbeafe;
-      color: var(--primary);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 800;
-      margin-bottom: 18px;
-    }
-
-    .service-card h3 {
-      color: var(--dark);
-      margin-bottom: 8px;
-    }
-
-    .service-card p {
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    /* ================= PROJECTS ================= */
-
-    .projects {
-      background: white;
-    }
-
-    .project-grid {
-      display: grid;
-      gap: 30px;
-    }
-
-    .project-card {
-      background: white;
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      overflow: hidden;
-      box-shadow: 0 8px 25px rgba(15, 23, 42, 0.05);
-    }
-
-    .project-image {
-      height: 300px;
-      background: #e2e8f0;
-      overflow: hidden;
-    }
-
-    .project-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: 0.4s;
-    }
-
-    .project-card:hover .project-image img {
-      transform: scale(1.03);
-    }
-
-    .project-content {
-      padding: 30px;
-    }
-
-    .project-number {
-      color: var(--primary);
-      font-weight: 800;
-      font-size: 13px;
-      margin-bottom: 7px;
-    }
-
-    .project-content h3 {
-      color: var(--dark);
-      font-size: 25px;
-      margin-bottom: 12px;
-    }
-
-    .project-content > p {
-      color: var(--muted);
-      margin-bottom: 20px;
-    }
-
-    .project-details {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 15px;
-      margin-bottom: 20px;
-    }
-
-    .detail-box {
-      background: var(--light);
-      padding: 15px;
-      border-radius: 10px;
-    }
-
-    .detail-box strong {
-      display: block;
-      color: var(--dark);
-      font-size: 13px;
-      margin-bottom: 4px;
-    }
-
-    .detail-box span {
-      font-size: 13px;
-      color: var(--muted);
-    }
-
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 22px;
-    }
-
-    .tag {
-      background: #eff6ff;
-      color: var(--primary-dark);
-      border-radius: 20px;
-      padding: 6px 11px;
-      font-size: 12px;
-      font-weight: 700;
-    }
-
-    .project-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    /* ================= SKILLS ================= */
-
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-    }
-
-    .skill-card {
-      background: white;
-      border: 1px solid var(--border);
-      padding: 25px;
-      border-radius: 15px;
-    }
-
-    .skill-card h3 {
-      color: var(--dark);
-      margin-bottom: 15px;
-    }
-
-    .skill-card ul {
-      list-style: none;
-    }
-
-    .skill-card li {
-      padding: 7px 0;
-      color: var(--muted);
-      font-size: 14px;
-      border-bottom: 1px dashed var(--border);
-    }
-
-    .skill-card li:last-child {
-      border-bottom: none;
-    }
-
-    /* ================= EXPERIENCE ================= */
-
-    .experience {
-      background: white;
-    }
-
-    .timeline {
-      max-width: 850px;
-      margin: auto;
-    }
-
-    .timeline-item {
-      position: relative;
-      padding: 0 0 35px 35px;
-      border-left: 2px solid #bfdbfe;
-    }
-
-    .timeline-item:last-child {
-      border-left: 2px solid transparent;
-    }
-
-    .timeline-dot {
-      position: absolute;
-      left: -8px;
-      top: 0;
-      width: 14px;
-      height: 14px;
-      border-radius: 50%;
-      background: var(--primary);
-    }
-
-    .timeline-item h3 {
-      color: var(--dark);
-      font-size: 22px;
-    }
-
-    .timeline-item h4 {
-      color: var(--primary);
-      margin: 5px 0;
-    }
-
-    .timeline-item .date {
-      font-size: 13px;
-      color: var(--muted);
-      margin-bottom: 12px;
-    }
-
-    .timeline-item p {
-      color: var(--muted);
-    }
-
-    /* ================= ACHIEVEMENTS ================= */
-
-    .achievement-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-
-    .achievement {
-      background: white;
-      border: 1px solid var(--border);
-      padding: 25px;
-      border-radius: 15px;
-      text-align: center;
-    }
-
-    .achievement h3 {
-      color: var(--dark);
-      margin-bottom: 8px;
-    }
-
-    .achievement p {
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    /* ================= CERTIFICATIONS ================= */
-
-    .cert-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-
-    .cert-card {
-      background: white;
-      border: 1px solid var(--border);
-      padding: 25px;
-      border-radius: 15px;
-    }
-
-    .cert-card h3 {
-      color: var(--dark);
-      margin-bottom: 10px;
-    }
-
-    .cert-card p {
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    /* ================= CTA ================= */
-
-    .cta {
-      background: var(--dark);
-      color: white;
-      text-align: center;
-    }
-
-    .cta h2 {
-      font-size: 38px;
-      margin-bottom: 15px;
-    }
-
-    .cta p {
-      max-width: 650px;
-      margin: 0 auto 25px;
-      color: #cbd5e1;
-    }
-
-    /* ================= CONTACT ================= */
-
-    .contact {
-      background: white;
-    }
-
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 30px;
-    }
-
-    .contact-card {
-      background: var(--light);
-      border: 1px solid var(--border);
-      padding: 28px;
-      border-radius: 15px;
-    }
-
-    .contact-card h3 {
-      color: var(--dark);
-      margin-bottom: 15px;
-    }
-
-    .contact-item {
-      padding: 13px 0;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .contact-item:last-child {
-      border-bottom: none;
-    }
-
-    .contact-item strong {
-      color: var(--dark);
-      display: block;
-    }
-
-    .contact-item a {
-      color: var(--primary);
-      word-break: break-word;
-    }
-
-    /* ================= FOOTER ================= */
-
-    footer {
-      background: #020617;
-      color: #94a3b8;
-      text-align: center;
-      padding: 25px 0;
-      font-size: 13px;
-    }
-
-    footer strong {
-      color: white;
-    }
-
-    /* ================= RESPONSIVE ================= */
-
-    @media (max-width: 900px) {
-
-      .hero-grid,
-      .about-grid,
-      .contact-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .services-grid,
-      .skills-grid,
-      .achievement-grid,
-      .cert-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .hero-card {
-        max-width: 500px;
-      }
-    }
-
-    @media (max-width: 650px) {
-
-      .container {
-        width: 92%;
-      }
-
-      .nav-inner {
-        height: 65px;
-      }
-
-      .nav-links {
-        display: none;
-      }
-
-      .hero {
-        padding-top: 100px;
-      }
-
-      .hero h1 {
-        font-size: 44px;
-      }
-
-      .hero h2 {
-        font-size: 19px;
-      }
-
-      .hero p {
-        font-size: 15px;
-      }
-
-      section {
-        padding: 65px 0;
-      }
-
-      .section-title h2 {
-        font-size: 30px;
-      }
-
-      .services-grid,
-      .skills-grid,
-      .achievement-grid,
-      .cert-grid,
-      .project-details {
-        grid-template-columns: 1fr;
-      }
-
-      .project-image {
-        height: 210px;
-      }
-
-      .project-content {
-        padding: 22px;
-      }
-
-      .cta h2 {
-        font-size: 30px;
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Parthiban V - B.Com Computer Applications graduate and aspiring Data Analyst specializing in Excel, SQL, Power BI, MIS Reporting and Business Analytics.">
+<meta name="keywords" content="Parthiban V, Data Analyst, MIS Executive, Business Analyst, Excel, SQL, Power BI, Data Analytics, Chennai">
+<meta name="author" content="Parthiban V">
+
+<meta property="og:title" content="Parthiban V | Data Analyst | MIS | Business Analytics">
+<meta property="og:description" content="Portfolio of Parthiban V - Data Analytics, MIS Reporting, SQL, Excel and Power BI projects.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://parthibanvofficial02.github.io/">
+
+<title>Parthiban V | Data Analyst | MIS | Business Analytics</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+--primary:#155eef;
+--primary-dark:#124dcc;
+--dark:#101828;
+--text:#344054;
+--muted:#667085;
+--light:#f7f8fa;
+--white:#ffffff;
+--border:#e4e7ec;
+--soft:#eef4ff;
+--soft2:#f2f4f7;
+--max:1160px;
+--radius:17px;
+--shadow:0 10px 30px rgba(16,24,40,.06);
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+background:var(--light);
+color:var(--text);
+font-family:"DM Sans",Arial,sans-serif;
+line-height:1.65;
+}
+
+a{
+color:inherit;
+text-decoration:none;
+}
+
+img{
+max-width:100%;
+display:block;
+}
+
+.container,
+.wrap{
+width:min(var(--max),92%);
+margin:auto;
+}
+
+/* ================= NAVBAR ================= */
+
+nav{
+position:sticky;
+top:0;
+z-index:1000;
+background:rgba(255,255,255,.94);
+backdrop-filter:blur(14px);
+border-bottom:1px solid var(--border);
+}
+
+.nav-container{
+min-height:70px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:20px;
+}
+
+.brand{
+font:800 22px Manrope,sans-serif;
+color:var(--dark);
+}
+
+.brand span{
+color:var(--primary);
+}
+
+.nav-links{
+display:flex;
+align-items:center;
+gap:23px;
+list-style:none;
+}
+
+.nav-links a{
+font-size:13px;
+font-weight:700;
+color:var(--muted);
+transition:.3s;
+}
+
+.nav-links a:hover{
+color:var(--primary);
+}
+
+/* ================= HERO ================= */
+
+.hero{
+padding:90px 0 65px;
+background:
+radial-gradient(circle at top right,rgba(21,94,239,.10),transparent 32%),
+linear-gradient(180deg,#fff 0%,#f7f8fa 100%);
+border-bottom:1px solid var(--border);
+}
+
+.hero-grid{
+display:grid;
+grid-template-columns:1.35fr .65fr;
+gap:55px;
+align-items:center;
+}
+
+.badge{
+display:inline-block;
+padding:7px 13px;
+border-radius:999px;
+background:var(--soft);
+border:1px solid #dbe7ff;
+color:var(--primary);
+font-size:12px;
+font-weight:800;
+letter-spacing:.6px;
+margin-bottom:18px;
+}
+
+.kicker{
+font-size:12px;
+text-transform:uppercase;
+letter-spacing:2px;
+font-weight:800;
+color:var(--primary);
+}
+
+.hero h1{
+font:800 clamp(44px,6vw,72px)/1.04 Manrope,sans-serif;
+letter-spacing:-3px;
+color:var(--dark);
+margin:12px 0 15px;
+}
+
+.hero h1 span{
+color:var(--primary);
+}
+
+.hero h2{
+font:700 23px Manrope,sans-serif;
+color:var(--text);
+margin-bottom:16px;
+}
+
+.hero p{
+font-size:18px;
+color:var(--muted);
+max-width:760px;
+}
+
+.hero-buttons{
+display:flex;
+flex-wrap:wrap;
+gap:11px;
+margin-top:27px;
+}
+
+.btn{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+padding:12px 17px;
+border-radius:10px;
+font-size:14px;
+font-weight:800;
+border:1px solid var(--border);
+background:#fff;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-2px);
+}
+
+.btn-primary{
+background:var(--primary);
+color:#fff;
+border-color:var(--primary);
+}
+
+.btn-primary:hover{
+background:var(--primary-dark);
+}
+
+.btn-outline{
+color:var(--dark);
+}
+
+.btn-outline:hover{
+color:var(--primary);
+border-color:var(--primary);
+}
+
+.hero-card{
+background:#fff;
+border:1px solid var(--border);
+border-radius:24px;
+padding:28px;
+box-shadow:var(--shadow);
+}
+
+.profile-circle{
+width:115px;
+height:115px;
+margin:0 auto 20px;
+border-radius:50%;
+background:linear-gradient(135deg,#155eef,#60a5fa);
+display:flex;
+align-items:center;
+justify-content:center;
+color:#fff;
+font:800 38px Manrope,sans-serif;
+}
+
+.hero-card h3{
+text-align:center;
+font:800 22px Manrope,sans-serif;
+color:var(--dark);
+}
+
+.hero-card p{
+text-align:center;
+font-size:13px;
+margin-top:4px;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:10px;
+margin-top:22px;
+}
+
+.stat{
+text-align:center;
+padding:14px 7px;
+background:#f8fafc;
+border:1px solid var(--border);
+border-radius:12px;
+}
+
+.stat strong{
+display:block;
+color:var(--primary);
+font:800 21px Manrope,sans-serif;
+}
+
+.stat span{
+font-size:10px;
+color:var(--muted);
+}
+
+/* ================= METRICS ================= */
+
+.metrics{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:12px;
+margin-top:42px;
+}
+
+.metric{
+background:#fff;
+border:1px solid var(--border);
+border-radius:13px;
+padding:17px;
+}
+
+.metric strong{
+display:block;
+font:800 22px Manrope,sans-serif;
+color:var(--dark);
+}
+
+.metric span{
+font-size:12px;
+color:var(--muted);
+}
+
+/* ================= SECTIONS ================= */
+
+section{
+padding:82px 0;
+}
+
+.section-heading{
+text-align:center;
+margin-bottom:42px;
+}
+
+.section-heading span{
+color:var(--primary);
+font-size:12px;
+font-weight:800;
+text-transform:uppercase;
+letter-spacing:1.7px;
+}
+
+.section-heading h2{
+font:800 34px Manrope,sans-serif;
+letter-spacing:-1px;
+color:var(--dark);
+margin-top:7px;
+}
+
+.section-heading p{
+max-width:700px;
+margin:9px auto 0;
+color:var(--muted);
+}
+
+/* ================= ABOUT ================= */
+
+.about-grid{
+display:grid;
+grid-template-columns:1.2fr .8fr;
+gap:18px;
+}
+
+.about-text{
+background:#fff;
+border:1px solid var(--border);
+border-radius:var(--radius);
+padding:28px;
+box-shadow:var(--shadow);
+}
+
+.about-text h3{
+font:800 23px Manrope,sans-serif;
+color:var(--dark);
+margin-bottom:13px;
+}
+
+.about-text p{
+color:var(--muted);
+font-size:14px;
+margin-bottom:13px;
+}
+
+.about-list{
+display:grid;
+gap:12px;
+}
+
+.about-item{
+background:#fff;
+border:1px solid var(--border);
+border-radius:14px;
+padding:17px;
+}
+
+.about-item strong{
+display:block;
+color:var(--dark);
+margin-bottom:3px;
+}
+
+.about-item span{
+font-size:13px;
+color:var(--muted);
+}
+
+/* ================= SERVICES ================= */
+
+.services{
+background:#fff;
+}
+
+.service-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:17px;
+}
+
+.service-card{
+background:#fff;
+border:1px solid var(--border);
+border-radius:var(--radius);
+padding:23px;
+transition:.3s;
+}
+
+.service-card:hover{
+transform:translateY(-4px);
+box-shadow:var(--shadow);
+border-color:#bfd3ff;
+}
+
+.service-icon{
+width:46px;
+height:46px;
+border-radius:11px;
+background:var(--soft);
+color:var(--primary);
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:800;
+font-size:13px;
+margin-bottom:15px;
+}
+
+.service-card h3{
+font:800 19px Manrope,sans-serif;
+color:var(--dark);
+margin-bottom:7px;
+}
+
+.service-card p{
+font-size:13px;
+color:var(--muted);
+}
+
+/* ================= PROJECTS ================= */
+
+.projects{
+background:#f7f8fa;
+}
+
+.project-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:17px;
+}
+
+.project-card{
+background:#fff;
+border:1px solid var(--border);
+border-radius:var(--radius);
+padding:24px;
+box-shadow:0 6px 22px rgba(16,24,40,.035);
+transition:.3s;
+}
+
+.project-card:hover{
+transform:translateY(-4px);
+box-shadow:var(--shadow);
+}
+
+.project-number{
+color:var(--primary);
+font:800 12px Manrope,sans-serif;
+}
+
+.project-card h3{
+font:800 20px Manrope,sans-serif;
+color:var(--dark);
+margin:10px 0 8px;
+}
+
+.project-card>p{
+font-size:13px;
+color:var(--muted);
+}
+
+.project-details{
+display:grid;
+grid-template-columns:1fr;
+gap:10px;
+margin:17px 0;
+}
+
+.detail-box{
+padding:12px;
+background:#f8fafc;
+border:1px solid var(--border);
+border-radius:10px;
+}
+
+.detail-box strong{
+display:block;
+font-size:11px;
+color:var(--dark);
+margin-bottom:2px;
+}
+
+.detail-box span{
+font-size:12px;
+color:var(--muted);
+}
+
+.insight{
+padding:14px;
+background:var(--soft);
+border-left:3px solid var(--primary);
+border-radius:9px;
+margin-bottom:17px;
+}
+
+.insight strong{
+font-size:12px;
+color:var(--dark);
+}
+
+.insight p{
+font-size:12px;
+color:var(--text);
+margin-top:3px;
+}
+
+.tags{
+display:flex;
+flex-wrap:wrap;
+gap:6px;
+margin:16px 0;
+}
+
+.tag{
+display:inline-block;
+background:var(--soft);
+color:#174ea6;
+border-radius:999px;
+padding:5px 9px;
+font-size:10px;
+font-weight:800;
+}
+
+.project-links{
+display:flex;
+gap:13px;
+flex-wrap:wrap;
+}
+
+.project-links a{
+font-size:12px;
+font-weight:800;
+color:var(--primary);
+border-bottom:1px solid var(--primary);
+padding-bottom:2px;
+}
+
+.project-links a:hover{
+opacity:.7;
+}
+
+/* ================= SKILLS ================= */
+
+.skills{
+background:#fff;
+}
+
+.skill-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:17px;
+}
+
+.skill-card{
+padding:23px;
+background:#fff;
+border:1px solid var(--border);
+border-radius:var(--radius);
+transition:.3s;
+}
+
+.skill-card:hover{
+box-shadow:var(--shadow);
+transform:translateY(-3px);
+}
+
+.skill-card h3{
+font:800 19px Manrope,sans-serif;
+color:var(--dark);
+margin-bottom:14px;
+}
+
+.skill-list{
+display:flex;
+flex-wrap:wrap;
+gap:7px;
+}
+
+.skill{
+padding:7px 9px;
+background:#f8fafc;
+border:1px solid var(--border);
+border-radius:8px;
+font-size:11px;
+color:var(--text);
+}
+
+/* ================= EXPERIENCE ================= */
+
+.experience{
+background:#f7f8fa;
+}
+
+.timeline{
+max-width:900px;
+margin:auto;
+display:grid;
+gap:17px;
+}
+
+.timeline-card{
+background:#fff;
+border:1px solid var(--border);
+border-radius:var(--radius);
+padding:25px;
+box-shadow:0 6px 22px rgba(16,24,40,.035);
+}
+
+.timeline-card h3{
+font:800 20px Manrope,sans-serif;
+color:var(--dark);
+}
+
+.timeline-card .company{
+color:var(--primary);
+font-weight:800;
+margin:4px 0;
+}
+
+.timeline-card .date{
+font-size:12px;
+color:var(--muted);
+margin-bottom:12px;
+}
+
+.timeline-card ul{
+padding-left:19px;
+color:var(--muted);
+font-size:13px;
+}
+
+/* ================= ACHIEVEMENTS ================= */
+
+.achievement-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:17px;
+}
+
+.achievement{
+background:#fff;
+border:1px solid var(--border);
+border-radius:var(--radius);
+padding:23px;
+text-align:center;
+}
+
+.achievement h3{
+font:800 18px Manrope,sans-serif;
+color:var(--dark);
+margin-bottom:6px;
+}
+
+.achievement p{
+font-size:13px;
+color:var(--muted);
+}
+
+/* ================= CERTIFICATIONS ================= */
+
+.certifications{
+background:#fff;
+}
+
+.cert-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:17px;
+}
+
+.cert-card{
+padding:22px;
+border:1px solid var(--border);
+border-radius:var(--radius);
+background:#fff;
+}
+
+.cert-card h3{
+font:800 17px Manrope,sans-serif;
+color:var(--dark);
+margin-bottom:7px;
+}
+
+.cert-card p{
+font-size:12px;
+color:var(--muted);
+margin-bottom:11px;
+}
+
+.cert-label{
+display:inline-block;
+font-size:10px;
+font-weight:800;
+color:var(--primary);
+background:var(--soft);
+padding:5px 9px;
+border-radius:999px;
+}
+
+/* ================= CTA ================= */
+
+.cta{
+background:var(--dark);
+color:#fff;
+text-align:center;
+}
+
+.cta h2{
+font:800 35px Manrope,sans-serif;
+margin-bottom:11px;
+}
+
+.cta p{
+max-width:680px;
+margin:auto auto 24px;
+color:#98a2b3;
+}
+
+.cta .btn{
+margin:4px;
+}
+
+/* ================= CONTACT ================= */
+
+.contact{
+background:#f7f8fa;
+}
+
+.contact-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:17px;
+}
+
+.contact-card{
+background:#fff;
+border:1px solid var(--border);
+border-radius:var(--radius);
+padding:23px;
+text-align:center;
+}
+
+.contact-card h3{
+font:800 17px Manrope,sans-serif;
+color:var(--dark);
+margin-bottom:6px;
+}
+
+.contact-card p{
+font-size:12px;
+color:var(--muted);
+word-break:break-word;
+}
+
+.contact-card a{
+color:var(--primary);
+font-weight:700;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+background:#0b1220;
+color:#98a2b3;
+font-size:12px;
+padding:27px 0;
+}
+
+.foot{
+display:flex;
+justify-content:space-between;
+gap:15px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+.hero-grid,
+.about-grid{
+grid-template-columns:1fr;
+}
+
+.project-grid,
+.service-grid,
+.achievement-grid,
+.cert-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.metrics{
+grid-template-columns:repeat(2,1fr);
+}
+
+.hero{
+padding-top:70px;
+}
+
+}
+
+@media(max-width:700px){
+
+.nav-container{
+flex-direction:column;
+padding:14px 0;
+}
+
+.nav-links{
+gap:10px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.nav-links a{
+font-size:11px;
+}
+
+.hero h1{
+font-size:45px;
+letter-spacing:-2px;
+}
+
+.hero h2{
+font-size:20px;
+}
+
+.hero p{
+font-size:15px;
+}
+
+.skill-grid,
+.project-grid,
+.service-grid,
+.achievement-grid,
+.cert-grid,
+.contact-grid{
+grid-template-columns:1fr;
+}
+
+.stats{
+grid-template-columns:1fr 1fr 1fr;
+}
+
+section{
+padding:65px 0;
+}
+
+.section-heading h2{
+font-size:29px;
+}
+
+.foot{
+flex-direction:column;
+text-align:center;
+}
+
+}
+
+@media(max-width:480px){
+
+.metrics{
+grid-template-columns:1fr 1fr;
+}
+
+.hero h1{
+font-size:39px;
+}
+
+.hero-buttons{
+flex-direction:column;
+}
+
+.btn{
+width:100%;
+}
+
+}
+
+</style>
+
 </head>
 
 <body>
 
-  <!-- ================= NAVBAR ================= -->
+<!-- ================= NAVBAR ================= -->
 
-  <nav>
-    <div class="container nav-inner">
+<nav>
+<div class="container nav-container">
 
-      <a href="#home" class="brand">
-        Parthiban V<span>.</span>
-      </a>
+<a href="#home" class="brand">
+Parthiban V<span>.</span>
+</a>
 
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">What I Do</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+<ul class="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">What I Do</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#certifications">Certifications</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
 
-    </div>
-  </nav>
+</div>
+</nav>
 
+<!-- ================= HERO ================= -->
 
-  <!-- ================= HERO ================= -->
+<section class="hero" id="home">
 
-  <section class="hero" id="home">
+<div class="container hero-grid">
 
-    <div class="container hero-grid">
+<div>
 
-      <div>
+<div class="badge">
+OPEN TO ENTRY-LEVEL OPPORTUNITIES
+</div>
 
-        <div class="badge">
-          OPEN TO OPPORTUNITIES · 2026 GRADUATE
-        </div>
+<div class="kicker">
+B.Com Computer Applications · 2026 Graduate
+</div>
 
-        <h1>
-          Analytics that turns
-          <span>data into direction.</span>
-        </h1>
+<h1>
+Analytics that turns
+<span>data into direction.</span>
+</h1>
 
-        <h2>
-          B.Com Computer Applications · Aspiring Data Analyst
-        </h2>
+<h2>
+Data Analyst • MIS • Business Analytics
+</h2>
 
-        <p>
-          I am Parthiban V, a business-focused analytics fresher skilled in
-          Excel, SQL, Power BI and MIS Reporting. I enjoy transforming
-          raw business data into meaningful insights, dashboards and
-          actionable reports.
-        </p>
+<p>
+I'm Parthiban V — a B.Com Computer Applications graduate
+passionate about transforming raw data into meaningful
+insights using Excel, SQL and Power BI.
+</p>
 
-        <div class="buttons">
+<div class="hero-buttons">
 
-          <a href="Parthiban_V_Resume.pdf"
-             class="btn btn-primary"
-             target="_blank">
-            Download Resume
-          </a>
+<a href="#projects" class="btn btn-primary">
+View My Projects
+</a>
 
-          <a href="https://www.linkedin.com/in/parthibanv23"
-             class="btn btn-outline"
-             target="_blank">
-            LinkedIn
-          </a>
+<a href="Parthiban_V_Resume.pdf"
+class="btn btn-outline"
+target="_blank">
+Download Resume </a>
 
-          <a href="https://github.com/parthibanvofficial02"
-             class="btn btn-outline"
-             target="_blank">
-            GitHub
-          </a>
+<a href="https://www.linkedin.com/in/parthibanv23"
+class="btn btn-outline"
+target="_blank">
+LinkedIn ↗ </a>
 
-        </div>
+<a href="https://github.com/parthibanvofficial02"
+class="btn btn-outline"
+target="_blank">
+GitHub ↗ </a>
 
-      </div>
+</div>
 
+</div>
 
-      <div class="hero-card">
+<div class="hero-card">
 
-        <h3>Quick Profile</h3>
+<div class="profile-circle">
+PV
+</div>
 
-        <div class="stat">
-          <span>Education</span>
-          <strong>B.Com CA</strong>
-        </div>
+<h3>
+Parthiban V
+</h3>
 
-        <div class="stat">
-          <span>CGPA</span>
-          <strong>8.28</strong>
-        </div>
+<p>
+B.Com Computer Applications · 2026 Graduate
+</p>
 
-        <div class="stat">
-          <span>Projects</span>
-          <strong>3+</strong>
-        </div>
+<div class="stats">
 
-        <div class="stat">
-          <span>Core Skills</span>
-          <strong>Excel · SQL · Power BI</strong>
-        </div>
+<div class="stat">
+<strong>8.28</strong>
+<span>CGPA</span>
+</div>
 
-        <div class="stat">
-          <span>Experience</span>
-          <strong>Analytics Intern</strong>
-        </div>
+<div class="stat">
+<strong>3+</strong>
+<span>Projects</span>
+</div>
 
-      </div>
+<div class="stat">
+<strong>4+</strong>
+<span>Core Tools</span>
+</div>
 
-    </div>
+</div>
 
-  </section>
+</div>
 
+</div>
 
-  <!-- ================= ABOUT ================= -->
+<div class="container metrics">
 
-  <section class="about" id="about">
+<div class="metric">
+<strong>Excel</strong>
+<span>Advanced reporting toolkit</span>
+</div>
 
-    <div class="container">
+<div class="metric">
+<strong>SQL</strong>
+<span>MySQL analysis</span>
+</div>
 
-      <div class="section-title">
-        <h2>About Me</h2>
-        <p>
-          A business-oriented analytics fresher who enjoys working with
-          data, reporting and visualization.
-        </p>
-      </div>
+<div class="metric">
+<strong>Power BI</strong>
+<span>Interactive dashboards</span>
+</div>
 
+<div class="metric">
+<strong>ApproTech</strong>
+<span>Data Analytics Intern</span>
+</div>
 
-      <div class="about-grid">
+</div>
 
-        <div>
+</section>
 
-          <h3>Business thinking + Data skills</h3>
+<!-- ================= ABOUT ================= -->
 
-          <p>
-            I completed my Bachelor of Commerce in Computer Applications
-            from S.I.V.E.T. College under the University of Madras.
-          </p>
+<section id="about">
 
-          <p>
-            My interest is in using data to understand business performance,
-            identify trends and create simple dashboards that help teams
-            make better decisions.
-          </p>
+<div class="container">
 
-          <p>
-            I am particularly interested in Data Analytics, MIS Reporting,
-            Business Intelligence, Operations Analytics and Reporting roles.
-          </p>
+<div class="section-heading">
 
-        </div>
+<span>About Me</span>
 
+<h2>
+Business-minded analytics professional
+</h2>
 
-        <div>
+<p>
+I combine business understanding with data analytics
+to support better reporting, decision-making and
+operational improvements.
+</p>
 
-          <ul class="check-list">
+</div>
 
-            <li>✓ Advanced Excel & Dashboard Development</li>
+<div class="about-grid">
 
-            <li>✓ SQL / MySQL Data Analysis</li>
+<div class="about-text">
 
-            <li>✓ Power BI & Interactive Dashboards</li>
+<h3>
+Turning business questions into data-driven answers
+</h3>
 
-            <li>✓ MIS & Business Reporting</li>
+<p>
+I am a B.Com Computer Applications graduate from
+S.I.V.E.T. College, University of Madras, with a strong
+interest in Data Analytics, MIS Reporting, Business
+Intelligence and Operations Analytics.
+</p>
 
-            <li>✓ Data Cleaning & Transformation</li>
+<p>
+My practical experience includes working with Excel,
+SQL/MySQL and Power BI to clean data, analyze trends,
+create dashboards and communicate business insights.
+</p>
 
-            <li>✓ Business-focused Problem Solving</li>
+<p>
+I enjoy solving real-world business problems through
+structured analysis and clear reporting rather than
+simply working with tools.
+</p>
 
-          </ul>
+</div>
 
-        </div>
+<div class="about-list">
 
-      </div>
+<div class="about-item">
+<strong>🎓 Education</strong>
+<span>
+B.Com Computer Applications · S.I.V.E.T. College
+</span>
+</div>
 
-    </div>
+<div class="about-item">
+<strong>📊 Focus Areas</strong>
+<span>
+Data Analytics · MIS · Reporting · BI · Operations
+</span>
+</div>
 
-  </section>
+<div class="about-item">
+<strong>💼 Career Goal</strong>
+<span>
+Data Analyst / MIS / Business Analytics roles
+</span>
+</div>
 
+<div class="about-item">
+<strong>📍 Availability</strong>
+<span>
+Open to entry-level opportunities and relocation
+</span>
+</div>
 
-  <!-- ================= WHAT I DO ================= -->
+</div>
 
-  <section id="services">
+</div>
 
-    <div class="container">
+</div>
 
-      <div class="section-title">
+</section>
 
-        <h2>What I Can Do</h2>
+<!-- ================= WHAT I DO ================= -->
 
-        <p>
-          Practical analytics capabilities focused on business reporting
-          and decision-making.
-        </p>
+<section class="services" id="services">
 
-      </div>
+<div class="container">
 
+<div class="section-heading">
 
-      <div class="services-grid">
+<span>What I Do</span>
 
+<h2>
+Where I can add value
+</h2>
 
-        <div class="service-card">
+<p>
+From cleaning raw data to building dashboards
+that support better business decisions.
+</p>
 
-          <div class="service-icon">EX</div>
+</div>
 
-          <h3>Excel Analytics</h3>
+<div class="service-grid">
 
-          <p>
-            Clean, analyze and summarize data using Pivot Tables,
-            XLOOKUP, VLOOKUP, INDEX-MATCH, Power Query and dashboards.
-          </p>
+<div class="service-card">
 
-        </div>
+<div class="service-icon">
+DA
+</div>
 
+<h3>
+Data Analysis
+</h3>
 
-        <div class="service-card">
+<p>
+Cleaning, transforming and analyzing raw datasets
+to uncover trends and patterns using Excel and SQL.
+</p>
 
-          <div class="service-icon">SQL</div>
+</div>
 
-          <h3>SQL Analysis</h3>
+<div class="service-card">
 
-          <p>
-            Extract business insights using joins, aggregations,
-            subqueries, CTEs, views and window functions.
-          </p>
+<div class="service-icon">
+BI
+</div>
 
-        </div>
+<h3>
+Dashboarding & BI
+</h3>
 
+<p>
+Building interactive Power BI dashboards with
+data modeling and DAX for clear reporting.
+</p>
 
-        <div class="service-card">
+</div>
 
-          <div class="service-icon">BI</div>
+<div class="service-card">
 
-          <h3>Power BI</h3>
+<div class="service-icon">
+MIS
+</div>
 
-          <p>
-            Build interactive dashboards with data modeling, DAX basics,
-            KPI cards, slicers and drill-through analysis.
-          </p>
+<h3>
+MIS Reporting
+</h3>
 
-        </div>
+<p>
+Designing structured MIS reports and trackers
+that keep stakeholders updated with accurate numbers.
+</p>
 
+</div>
 
-        <div class="service-card">
+<div class="service-card">
 
-          <div class="service-icon">MI</div>
+<div class="service-icon">
+SQL
+</div>
 
-          <h3>MIS Reporting</h3>
+<h3>
+SQL Querying
+</h3>
 
-          <p>
-            Create structured operational and management reports
-            that highlight important business metrics.
-          </p>
+<p>
+Writing MySQL queries to extract, join and
+summarize data from relational datasets.
+</p>
 
-        </div>
+</div>
 
+<div class="service-card">
 
-        <div class="service-card">
+<div class="service-icon">
+OP
+</div>
 
-          <div class="service-icon">DC</div>
+<h3>
+Operations Analytics
+</h3>
 
-          <h3>Data Cleaning</h3>
+<p>
+Analyzing bookings, transactions and operational
+data to highlight performance and efficiency gaps.
+</p>
 
-          <p>
-            Transform raw datasets into clean, analysis-ready data
-            using Excel Power Query and SQL.
-          </p>
+</div>
 
-        </div>
+<div class="service-card">
 
+<div class="service-icon">
+EX
+</div>
 
-        <div class="service-card">
+<h3>
+Excel Reporting
+</h3>
 
-          <div class="service-icon">AN</div>
+<p>
+Building formula-driven trackers, Pivot reports
+and dashboards for efficient business reporting.
+</p>
 
-          <h3>Business Analysis</h3>
+</div>
 
-          <p>
-            Convert numbers into trends, patterns and insights
-            that can support business decisions.
-          </p>
+</div>
 
-        </div>
+</div>
 
-      </div>
+</section>
 
-    </div>
+<!-- ================= PROJECTS ================= -->
 
-  </section>
+<section class="projects" id="projects">
 
+<div class="container">
 
-  <!-- ================= PROJECTS ================= -->
+<div class="section-heading">
 
-  <section class="projects" id="projects">
+<span>Selected Work</span>
 
-    <div class="container">
+<h2>
+Analytics Projects
+</h2>
 
-      <div class="section-title">
+<p>
+Practical projects demonstrating analysis,
+reporting and dashboard development.
+</p>
 
-        <h2>Selected Projects</h2
+</div>
+
+<div class="project-grid">
+
+<!-- PROJECT 1 -->
+
+<article class="project-card">
+
+<span class="project-number">
+01 · RETAIL ANALYTICS
+</span>
+
+<h3>
+Blinkit Retail Sales & Inventory Analytics
+</h3>
+
+<p>
+Built sales and inventory dashboards to analyze
+outlet performance and category-wise trends.
+Cleaned and transformed business data using
+Excel and Power Query.
+</p>
+
+<div class="project-details">
+
+<div class="detail-box">
+<strong>FOCUS</strong>
+<span>
+Outlet performance · Category trends · Inventory reporting
+</span>
+</div>
+
+<div class="detail-box">
+<strong>TOOLS</strong>
+<span>
+Excel · Power Query · Power BI
+</span>
+</div>
+
+</div>
+
+<div class="insight">
+
+<strong>PROJECT VALUE</strong>
+
+<p>
+Converted raw retail data into structured
+reports and interactive dashboards for
+business performance analysis.
+</p>
+
+</div>
+
+<div class="tags">
+
+<span class="tag">Excel</span> <span class="tag">Power Query</span> <span class="tag">Power BI</span> <span class="tag">Data Cleaning</span> <span class="tag">Dashboard</span>
+
+</div>
+
+<div class="project-links">
+
+<a href="https://github.com/parthibanvofficial02/blinkit-retail-analytics"
+target="_blank">
+View on GitHub ↗ </a>
+
+<a href="https://github.com/parthibanvofficial02/blinkit-retail-analytics/blob/main/blinkit-dashboard.png"
+target="_blank">
+View Dashboard ↗ </a>
+
+</div>
+
+</article>
+
+<!-- PROJECT 2 -->
+
+<article class="project-card">
+
+<span class="project-number">
+02 · PAYMENT ANALYTICS
+</span>
+
+<h3>
+PhonePe Digital Payment Analytics
+</h3>
+
+<p>
+Analyzed digital payment transactions and
+generated business reports using SQL and Excel.
+Created Pivot Table reports to identify
+transaction trends and customer activity.
+</p>
+
+<div class="project-details">
+
+<div class="detail-box">
+<strong>FOCUS</strong>
+<span>
+Transactions · Trends · Customer activity
+</span>
+</div>
+
+<div class="detail-box">
+<strong>TOOLS</strong>
+<span>
+MySQL · Excel · Pivot Tables
+</span>
+</div>
+
+</div>
+
+<div class="insight">
+
+<strong>PROJECT VALUE</strong>
+
+<p>
+Used SQL-based analysis and Excel reporting
+to understand transaction patterns and
+customer activity.
+</p>
+
+</div>
+
+<div class="tags">
+
+<span class="tag">MySQL</span> <span class="tag">Excel</span> <span class="tag">Pivot Tables</span> <span class="tag">SQL</span> <span class="tag">Analytics</span>
+
+</div>
+
+<div class="project-links">
+
+<a href="https://github.com/parthibanvofficial02"
+target="_blank">
+View on GitHub ↗ </a>
+
+</div>
+
+</article>
+
+<!-- PROJECT 3 -->
+
+<article class="project-card">
+
+<span class="project-number">
+03 · OPERATIONS ANALYTICS
+</span>
+
+<h3>
+Uber Operations Performance Dashboard
+</h3>
+
+<p>
+Developed dashboards to monitor ride demand,
+booking trends, cancellations and operational
+performance.
+</p>
+
+<div class="project-details">
+
+<div class="detail-box">
+<strong>FOCUS</strong>
+<span>
+Demand · Bookings · Cancellations · Performance
+</span>
+</div>
+
+<div class="detail-box">
+<strong>TOOLS</strong>
+<span>
+SQL · Power BI · Dashboard
+</span>
+</div>
+
+</div>
+
+<div class="insight">
+
+<strong>PROJECT VALUE</strong>
+
+<p>
+Created operational reporting to identify
+ride demand patterns and performance trends.
+</p>
+
+</div>
+
+<div class="tags">
+
+<span class="tag">SQL</span> <span class="tag">Power BI</span> <span class="tag">Dashboard</span> <span class="tag">Operations</span>
+
+</div>
+
+<div class="project-links">
+
+<a href="https://github.com/parthibanvofficial02/uber-operations-dashboard"
+target="_blank">
+View on GitHub ↗ </a>
+
+<a href="https://github.com/parthibanvofficial02/uber-operations-dashboard/blob/main/screenshot.png"
+target="_blank">
+View Dashboard ↗ </a>
+
+</div>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= SKILLS ================= -->
+
+<section class="skills" id="skills">
+
+<div class="container">
+
+<div class="section-heading">
+
+<span>Technical Toolkit</span>
+
+<h2>
+Skills & Tools
+</h2>
+
+<p>
+Core capabilities aligned with Data Analyst,
+MIS and Business Analytics roles.
+</p>
+
+</div>
+
+<div class="skill-grid">
+
+<div class="skill-card">
+
+<h3>
+Microsoft Excel
+</h3>
+
+<div class="skill-list">
+
+<span class="skill">Pivot Tables</span> <span class="skill">Pivot Charts</span> <span class="skill">XLOOKUP</span> <span class="skill">VLOOKUP</span> <span class="skill">INDEX-MATCH</span> <span class="skill">Power Query</span> <span class="skill">Data Cleaning</span> <span class="skill">Dashboard Development</span> <span class="skill">Conditional Formatting</span>
+
+</div>
+
+</div>
+
+<div class="skill-card">
+
+<h3>
+SQL · MySQL
+</h3>
+
+<div class="skill-list">
+
+<span class="skill">Joins</span> <span class="skill">Aggregations</span> <span class="skill">GROUP BY</span> <span class="skill">HAVING</span> <span class="skill">Subqueries</span> <span class="skill">CTEs</span> <span class="skill">Views</span> <span class="skill">ROW_NUMBER()</span> <span class="skill">RANK()</span> <span class="skill">DENSE_RANK()</span>
+
+</div>
+
+</div>
+
+<div class="skill-card">
+
+<h3>
+Power BI
+</h3>
+
+<div class="skill-list">
+
+<span class="skill">Data Modeling</span> <span class="skill">DAX Basics</span> <span class="skill">KPI Cards</span> <span class="skill">Slicers</span> <span class="skill">Drill Through</span> <span class="skill">Interactive Dashboards</span>
+
+</div>
+
+</div>
+
+<div class="skill-card">
+
+<h3>
+Business & Tools
+</h3>
+
+<div class="skill-list">
+
+<span class="skill">MIS Reporting</span> <span class="skill">Business Reporting</span> <span class="skill">Operational Reporting</span> <span class="skill">Business Intelligence</span> <span class="skill">Data Visualization</span> <span class="skill">Tally Prime</span> <span class="skill">Basic Python</span> <span class="skill">Microsoft Office</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+
+<section class="experience" id="experience">
+
+<div class="container">
+
+<div class="section-heading">
+
+<span>Experience & Education</span>
+
+<h2>
+My Journey
+</h2>
+
+<p>
+Academic foundation, internship exposure
+and leadership experience.
+</p>
+
+</div>
+
+<div class="timeline">
+
+<div class="timeline-card">
+
+<h3>
+Data Analytics Intern
+</h3>
+
+<div class="company">
+ApproTech, Tambaram
+</div>
+
+<div class="date">
+Internship · Data Analytics
+</div>
+
+<ul>
+
+<li>
+Prepared MIS reports and structured business data.
+</li>
+
+<li>
+Validated datasets and performed data cleaning.
+</li>
+
+<li>
+Supported dashboard development using Excel and Power BI.
+</li>
+
+</ul>
+
+</div>
+
+<div class="timeline-card">
+
+<h3>
+B.Com Computer Applications
+</h3>
+
+<div class="company">
+S.I.V.E.T. College · University of Madras
+</div>
+
+<div class="date">
+2023 — 2026 · CGPA 8.28
+</div>
+
+<ul>
+
+<li>
+Commerce and computer applications foundation.
+</li>
+
+<li>
+Hands-on exposure to business analytics and reporting.
+</li>
+
+<li>
+No Active Arrears.
+</li>
+
+</ul>
+
+</div>
+
+<div class="timeline-card">
+
+<h3>
+Class Representative
+</h3>
+
+<div class="company">
+S.I.V.E.T. College
+</div>
+
+<div class="date">
+Leadership · 3 Consecutive Years
+</div>
+
+<ul>
+
+<li>
+Elected Class Representative for three consecutive years.
+</li>
+
+<li>
+Coordinated student communication and departmental activities.
+</li>
+
+<li>
+Organized events including Logo Connection and Blind Folded competitions.
+</li>
+
+</ul>
+
+</div>
+
+<div class="timeline-card">
+
+<h3>
+Achievements
+</h3>
+
+<div class="company">
+Leadership · Communication · Problem Solving
+</div>
+
+<div class="date">
+Academic & Co-curricular Achievements
+</div>
+
+<ul>
+
+<li>
+Best Manager Winner.
+</li>
+
+<li>
+Essay Competition Cash Prize Winner.
+</li>
+
+<li>
+Demonstrated leadership, communication and competitive problem-solving skills.
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= ACHIEVEMENTS ================= -->
+
+<section>
+
+<div class="container">
+
+<div class="section-heading">
+
+<span>Highlights</span>
+
+<h2>
+Achievements
+</h2>
+
+<p>
+A few highlights beyond technical skills.
+</p>
+
+</div>
+
+<div class="achievement-grid">
+
+<div class="achievement">
+
+<h3>
+🏆 Best Manager Winner
+</h3>
+
+<p>
+Recognized for leadership,
+communication and decision-making.
+</p>
+
+</div>
+
+<div class="achievement">
+
+<h3>
+🥇 Essay Competition
+</h3>
+
+<p>
+Cash prize winner demonstrating
+writing and communication ability.
+</p>
+
+</div>
+
+<div class="achievement">
+
+<h3>
+👥 Class Representative
+</h3>
+
+<p>
+Served as Class Representative
+for three consecutive years.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= CERTIFICATIONS ================= -->
+
+<section class="certifications" id="certifications">
+
+<div class="container">
+
+<div class="section-heading">
+
+<span>Certifications</span>
+
+<h2>
+Learning & Credentials
+</h2>
+
+<p>
+Credentials supporting my analytics and
+technology foundation.
+</p>
+
+</div>
+
+<div class="cert-grid">
+
+<div class="cert-card">
+
+<h3>
+Advanced Data Analytics
+</h3>
+
+<p>
+Analytics-focused certification.
+</p>
+
+<span class="cert-label">
+DATA ANALYTICS
+</span>
+
+</div>
+
+<div class="cert-card">
+
+<h3>
+Microsoft Excel · SQL · Power BI
+</h3>
+
+<p>
+Core analytics credentials.
+</p>
+
+<span class="cert-label">
+CORE ANALYTICS
+</span>
+
+</div>
+
+<div class="cert-card">
+
+<h3>
+IBM AI · Cloud Computing · Tally Prime
+</h3>
+
+<p>
+Additional technology and business-tool credentials.
+</p>
+
+<span class="cert-label">
+ADDITIONAL SKILLS
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+<div class="container">
+
+<h2>
+Let's work with data.
+</h2>
+
+<p>
+I am actively looking for entry-level opportunities
+in Data Analytics, MIS Reporting, Business Analytics,
+Operations Analytics and related roles.
+</p>
+
+<a href="mailto:parthibanvofficial02@gmail.com"
+class="btn btn-primary">
+Contact Me </a>
+
+<a href="Parthiban_V_Resume.pdf"
+class="btn btn-outline"
+target="_blank">
+View Resume </a>
+
+</div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact" id="contact">
+
+<div class="container">
+
+<div class="section-heading">
+
+<span>Contact</span>
+
+<h2>
+Open to Opportunities
+</h2>
+
+<p>
+Interested in Data Analytics, Reporting,
+Operations Analytics, Business Analytics,
+RevOps, Marketing Analytics and MIS opportunities.
+</p>
+
+</div>
+
+<div class="contact-grid">
+
+<div class="contact-card">
+
+<h3>
+Email
+</h3>
+
+<p>
+<a href="mailto:parthibanvofficial02@gmail.com">
+parthibanvofficial02@gmail.com
+</a>
+</p>
+
+</div>
+
+<div class="contact-card">
+
+<h3>
+Phone
+</h3>
+
+<p>
+<a href="tel:+916383171150">
++91 6383171150
+</a>
+</p>
+
+</div>
+
+<div class="contact-card">
+
+<h3>
+LinkedIn
+</h3>
+
+<p>
+<a href="https://www.linkedin.com/in/parthibanv23"
+target="_blank">
+linkedin.com/in/parthibanv23
+</a>
+</p>
+
+</div>
+
+<div class="contact-card">
+
+<h3>
+GitHub
+</h3>
+
+<p>
+<a href="https://github.com/parthibanvofficial02"
+target="_blank">
+github.com/parthibanvofficial02
+</a>
+</p>
+
+</div>
+
+<div class="contact-card">
+
+<h3>
+Location
+</h3>
+
+<p>
+Singaperumal Kovil, Tamil Nadu
+</p>
+
+</div>
+
+<div class="contact-card">
+
+<h3>
+Availability
+</h3>
+
+<p>
+Open to entry-level opportunities and relocation.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="container foot">
+
+<span>
+© 2026 Parthiban V
+</span>
+
+<span>
+Data · Reporting · Operations · Business Intelligence
+</span>
+
+</div>
+
+</footer>
+
+</body>
+</html>
