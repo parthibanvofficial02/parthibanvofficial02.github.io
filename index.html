@@ -1,1460 +1,1035 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-
-<meta name="description" content="Parthiban V — Data Analyst portfolio featuring Excel, SQL, Power BI, MIS Reporting, Operations Analytics and Business Intelligence projects.">
-
-<meta name="keywords" content="Parthiban V, Data Analyst, Data Analytics, Excel, SQL, Power BI, MIS Executive, Business Analyst, Operations Analyst, Chennai">
-
-<meta name="author" content="Parthiban V">
-
-<title>Parthiban V | Data Analyst Portfolio</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
-
-<style>
-
-:root{
---bg:#f7f8fa;
---surface:#fff;
---ink:#101828;
---muted:#667085;
---line:#e4e7ec;
---accent:#155eef;
---soft:#eef4ff;
---max:1160px
-}
-
-*{
-box-sizing:border-box
-}
-
-html{
-scroll-behavior:smooth
-}
-
-body{
-margin:0;
-background:var(--bg);
-color:var(--ink);
-font-family:"DM Sans",Arial,sans-serif;
-line-height:1.65
-}
-
-a{
-color:inherit;
-text-decoration:none
-}
-
-.wrap{
-max-width:var(--max);
-margin:auto;
-padding:0 26px
-}
-
-/* NAVIGATION */
-
-nav{
-position:sticky;
-top:0;
-z-index:20;
-background:rgba(255,255,255,.92);
-backdrop-filter:blur(14px);
-border-bottom:1px solid var(--line)
-}
-
-.nav{
-height:70px;
-display:flex;
-justify-content:space-between;
-align-items:center
-}
-
-.logo{
-font:800 20px Manrope
-}
-
-.logo b{
-color:var(--accent)
-}
-
-.navlinks{
-display:flex;
-gap:24px;
-color:var(--muted);
-font-size:14px
-}
-
-.navlinks a{
-transition:.2s
-}
-
-.navlinks a:hover{
-color:var(--accent)
-}
-
-/* HERO */
-
-.hero{
-background:#fff;
-border-bottom:1px solid var(--line);
-padding:92px 0 72px
-}
-
-.hero-grid{
-display:grid;
-grid-template-columns:1.35fr .65fr;
-gap:55px;
-align-items:end
-}
-
-.kicker{
-font-size:12px;
-text-transform:uppercase;
-letter-spacing:2px;
-font-weight:700;
-color:var(--accent)
-}
-
-h1,h2,h3{
-font-family:Manrope;
-margin:0
-}
-
-h1{
-font-size:clamp(44px,6vw,74px);
-line-height:1.03;
-letter-spacing:-3px;
-margin:15px 0
-}
-
-.hero h1 span{
-color:var(--accent)
-}
-
-.lead{
-font-size:19px;
-color:var(--muted);
-max-width:760px
-}
-
-.buttons{
-display:flex;
-flex-wrap:wrap;
-gap:11px;
-margin-top:28px
-}
-
-.btn{
-border:1px solid var(--line);
-padding:12px 17px;
-border-radius:10px;
-font-weight:700;
-font-size:14px;
-background:#fff;
-transition:.2s
-}
-
-.btn:hover{
-transform:translateY(-2px);
-box-shadow:0 6px 18px rgba(16,24,40,.08)
-}
-
-.btn.primary{
-background:var(--accent);
-color:#fff;
-border-color:var(--accent)
-}
-
-.btn.primary:hover{
-opacity:.92
-}
-
-.mini{
-border-left:3px solid var(--accent);
-padding-left:20px
-}
-
-.mini strong{
-display:block;
-font:700 31px Manrope
-}
-
-.mini span{
-color:var(--muted);
-font-size:13px
-}
-
-/* METRICS */
-
-.metrics{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:12px;
-margin-top:48px
-}
-
-.metric{
-border:1px solid var(--line);
-background:#fff;
-border-radius:13px;
-padding:18px;
-transition:.2s
-}
-
-.metric:hover{
-transform:translateY(-3px);
-box-shadow:0 10px 25px rgba(16,24,40,.06)
-}
-
-.metric strong{
-font:800 25px Manrope;
-display:block
-}
-
-.metric span{
-color:var(--muted);
-font-size:13px
-}
-
-/* SECTIONS */
-
-section{
-padding:82px 0
-}
-
-.section-head{
-display:flex;
-justify-content:space-between;
-gap:30px;
-align-items:end;
-margin-bottom:28px
-}
-
-.section-title{
-font-size:34px;
-letter-spacing:-1px
-}
-
-.section-sub{
-color:var(--muted);
-max-width:680px;
-margin:7px 0 0
-}
-
-/* CARDS */
-
-.grid3{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:17px
-}
-
-.card{
-background:var(--surface);
-border:1px solid var(--line);
-border-radius:17px;
-padding:25px;
-box-shadow:0 6px 22px rgba(16,24,40,.035);
-transition:.25s
-}
-
-.card:hover{
-transform:translateY(-4px);
-box-shadow:0 14px 32px rgba(16,24,40,.08)
-}
-
-.number{
-color:var(--accent);
-font:800 13px Manrope
-}
-
-.card h3{
-font-size:21px;
-margin:11px 0 8px
-}
-
-.card p{
-font-size:14px;
-color:var(--muted);
-margin:0 0 10px
-}
-
-/* TAGS */
-
-.tags{
-margin-top:18px
-}
-
-.tag{
-display:inline-block;
-background:var(--soft);
-color:#174ea6;
-border-radius:999px;
-padding:5px 9px;
-font-size:11px;
-font-weight:700;
-margin:3px
-}
-
-/* PROJECT */
-
-.case{
-margin-top:16px
-}
-
-.case b{
-font-size:12px
-}
-
-.case div{
-font-size:13px;
-color:var(--muted);
-margin-top:3px
-}
-
-.proj-links{
-margin-top:18px;
-display:flex;
-gap:14px;
-flex-wrap:wrap
-}
-
-.proj-links a{
-font-weight:700;
-color:var(--accent);
-font-size:13px;
-border-bottom:1px solid var(--accent);
-padding-bottom:2px
-}
-
-.proj-links a:hover{
-opacity:.7
-}
-
-.proj-img{
-display:block;
-width:100%;
-height:170px;
-object-fit:cover;
-object-position:top;
-border-radius:12px;
-border:1px solid var(--line);
-margin-bottom:16px;
-background:#f2f4f7
-}
-
-.proj-note{
-font-size:12.5px;
-color:var(--muted);
-margin-top:10px
-}
-
-/* INSIGHTS */
-
-.insights{
-margin-top:18px;
-padding-top:15px;
-border-top:1px solid var(--line)
-}
-
-.insights b{
-font-size:12px
-}
-
-.insights ul{
-margin:7px 0 0;
-padding-left:18px;
-color:var(--muted);
-font-size:13px
-}
-
-.insights li{
-margin-bottom:4px
-}
-
-/* WHAT I CAN DO */
-
-.capability-card{
-background:#fff;
-border:1px solid var(--line);
-border-radius:17px;
-padding:25px;
-transition:.25s
-}
-
-.capability-card:hover{
-transform:translateY(-4px);
-box-shadow:0 14px 32px rgba(16,24,40,.07)
-}
-
-.capability-icon{
-font-size:25px;
-margin-bottom:10px
-}
-
-.capability-card h3{
-font-size:19px;
-margin-bottom:7px
-}
-
-.capability-card p{
-font-size:14px;
-color:var(--muted);
-margin:0
-}
-
-.capabilities{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:17px
-}
-
-/* SKILLS */
-
-.two{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:17px
-}
-
-.skillbox{
-border:1px solid var(--line);
-border-radius:17px;
-background:#fff;
-padding:23px;
-transition:.2s
-}
-
-.skillbox:hover{
-box-shadow:0 10px 25px rgba(16,24,40,.06)
-}
-
-.skillbox h3{
-font-size:18px;
-margin-bottom:14px
-}
-
-.chips{
-display:flex;
-flex-wrap:wrap;
-gap:7px
-}
-
-.chip{
-font-size:12px;
-background:#f2f4f7;
-border:1px solid #eaecf0;
-border-radius:8px;
-padding:7px 9px
-}
-
-/* TIMELINE */
-
-.timeline{
-border-left:2px solid #dbe4f0;
-margin:8px 0 0 10px;
-padding-left:28px
-}
-
-.event{
-position:relative;
-margin-bottom:34px
-}
-
-.event:before{
-content:"";
-position:absolute;
-left:-35px;
-top:7px;
-width:10px;
-height:10px;
-background:var(--accent);
-border-radius:50%;
-box-shadow:0 0 0 5px var(--bg)
-}
-
-.event .meta{
-font-size:11px;
-letter-spacing:1px;
-color:var(--accent);
-font-weight:800
-}
-
-.event h3{
-font-size:20px;
-margin:5px 0
-}
-
-.event p{
-color:var(--muted);
-font-size:14px;
-margin:0
-}
-
-/* ABOUT */
-
-.about{
-display:grid;
-grid-template-columns:1.25fr .75fr;
-gap:17px
-}
-
-.quote{
-background:#101828;
-color:#fff;
-border-radius:17px;
-padding:30px
-}
-
-.quote p{
-font:600 20px Manrope;
-line-height:1.4
-}
-
-.quote small{
-color:#98a2b3
-}
-
-.checklist{
-padding-left:18px;
-color:var(--muted);
-font-size:14px
-}
-
-/* CERTIFICATIONS */
-
-.cert-card{
-background:#fff;
-border:1px solid var(--line);
-border-radius:17px;
-padding:25px;
-transition:.2s
-}
-
-.cert-card:hover{
-transform:translateY(-3px);
-box-shadow:0 10px 25px rgba(16,24,40,.06)
-}
-
-.cert-card h3{
-font-size:19px;
-margin-bottom:7px
-}
-
-.cert-card p{
-font-size:14px;
-color:var(--muted);
-margin:0
-}
-
-.cert-link{
-display:inline-block;
-margin-top:13px;
-font-size:13px;
-font-weight:700;
-color:var(--accent);
-border-bottom:1px solid var(--accent)
-}
-
-/* CTA */
-
-.cta{
-background:#eef4ff;
-border-top:1px solid #dbe7ff;
-border-bottom:1px solid #dbe7ff
-}
-
-.cta-box{
-display:flex;
-justify-content:space-between;
-align-items:center;
-gap:25px
-}
-
-.cta h2{
-font-size:30px
-}
-
-.cta p{
-color:var(--muted);
-margin:6px 0 0
-}
-
-/* CONTACT */
-
-.contact{
-background:#101828;
-color:#fff
-}
-
-.contact .section-sub{
-color:#98a2b3
-}
-
-.contact-card{
-border:1px solid #344054;
-border-radius:17px;
-padding:26px;
-background:#162033
-}
-
-.contact-card a{
-color:#9ec1ff
-}
-
-.contactgrid{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:12px
-}
-
-.contactitem{
-padding:14px;
-border:1px solid #344054;
-border-radius:11px
-}
-
-.contactitem small{
-display:block;
-color:#98a2b3;
-margin-bottom:2px
-}
-
-/* FOOTER */
-
-footer{
-padding:30px 0;
-background:#0b1220;
-color:#98a2b3;
-font-size:13px
-}
-
-.foot{
-display:flex;
-justify-content:space-between;
-gap:15px
-}
-
-/* RESPONSIVE */
-
-@media(max-width:950px){
-
-.hero-grid{
-grid-template-columns:1fr
-}
-
-.grid3,
-.capabilities{
-grid-template-columns:1fr 1fr
-}
-
-}
-
-@media(max-width:850px){
-
-.about,
-.two{
-grid-template-columns:1fr
-}
-
-.metrics{
-grid-template-columns:1fr 1fr
-}
-
-.navlinks{
-display:none
-}
-
-.cta-box{
-display:block
-}
-
-.cta-box .btn{
-margin-top:18px
-}
-
-}
-
-@media(max-width:560px){
-
-.grid3,
-.metrics,
-.contactgrid,
-.capabilities{
-grid-template-columns:1fr
-}
-
-.hero{
-padding-top:65px
-}
-
-h1{
-letter-spacing:-2px
-}
-
-.section-head{
-display:block
-}
-
-.section-title{
-font-size:30px
-}
-
-.lead{
-font-size:17px
-}
-
-.buttons{
-flex-direction:column;
-align-items:flex-start
-}
-
-.btn{
-width:100%;
-text-align:center
-}
-
-.foot{
-display:block
-}
-
-.foot span{
-display:block;
-margin-bottom:7px
-}
-
-}
-
-</style>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+        content="Parthiban V - B.Com Computer Applications graduate and aspiring Data Analyst specializing in Excel, SQL, Power BI, MIS Reporting and Business Analytics.">
+
+  <meta name="keywords"
+        content="Parthiban V, Data Analyst, MIS Executive, Business Analyst, Excel, SQL, Power BI, Data Analytics, Chennai">
+
+  <meta name="author" content="Parthiban V">
+
+  <meta property="og:title" content="Parthiban V | Data Analyst | MIS | Business Analytics">
+  <meta property="og:description"
+        content="Portfolio of Parthiban V - Data Analytics, MIS Reporting, SQL, Excel and Power BI projects.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://parthibanvofficial02.github.io/">
+
+  <title>Parthiban V | Data Analyst | MIS | Business Analytics</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --dark: #0f172a;
+      --text: #334155;
+      --muted: #64748b;
+      --light: #f8fafc;
+      --white: #ffffff;
+      --border: #e2e8f0;
+      --card: #ffffff;
+      --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      --radius: 18px;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--light);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
+
+    /* NAVBAR */
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.96);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+    }
+
+    .nav-container {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      font-size: 25px;
+      font-weight: 800;
+      color: var(--dark);
+    }
+
+    .brand span {
+      color: var(--primary);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    /* HERO */
+
+    .hero {
+      padding: 100px 0 80px;
+      background:
+        radial-gradient(circle at top right, rgba(37, 99, 235, 0.10), transparent 35%),
+        linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 0.8fr;
+      align-items: center;
+      gap: 60px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 7px 14px;
+      border-radius: 999px;
+      background: #eff6ff;
+      color: var(--primary);
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      border: 1px solid #dbeafe;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 6vw, 70px);
+      line-height: 1.05;
+      color: var(--dark);
+      margin-bottom: 20px;
+      letter-spacing: -2px;
+    }
+
+    .hero h1 span {
+      color: var(--primary);
+    }
+
+    .hero h2 {
+      font-size: 24px;
+      color: var(--text);
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      color: var(--muted);
+      font-size: 17px;
+      margin-bottom: 28px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 19px;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 700;
+      border: 1px solid transparent;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border-color: var(--border);
+      background: white;
+      color: var(--dark);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+      transform: translateY(-2px);
+    }
+
+    .hero-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .profile-circle {
+      width: 115px;
+      height: 115px;
+      margin: 0 auto 22px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #2563eb, #60a5fa);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 38px;
+      font-weight: 800;
+    }
+
+    .hero-card h3 {
+      text-align: center;
+      color: var(--dark);
+      margin-bottom: 6px;
+      font-size: 22px;
+    }
+
+    .hero-card p {
+      text-align: center;
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .stat {
+      text-align: center;
+      padding: 15px 8px;
+      background: #f8fafc;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+    }
+
+    .stat strong {
+      display: block;
+      color: var(--primary);
+      font-size: 21px;
+    }
+
+    .stat span {
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    /* SECTIONS */
+
+    section {
+      padding: 90px 0;
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .section-heading span {
+      color: var(--primary);
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    .section-heading h2 {
+      color: var(--dark);
+      font-size: 36px;
+      margin-top: 7px;
+    }
+
+    .section-heading p {
+      max-width: 680px;
+      margin: 10px auto 0;
+      color: var(--muted);
+    }
+
+    /* ABOUT */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 40px;
+      align-items: start;
+    }
+
+    .about-text {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 30px;
+      box-shadow: var(--shadow);
+    }
+
+    .about-text h3 {
+      color: var(--dark);
+      font-size: 24px;
+      margin-bottom: 14px;
+    }
+
+    .about-text p {
+      color: var(--muted);
+      margin-bottom: 15px;
+    }
+
+    .about-list {
+      display: grid;
+      gap: 13px;
+    }
+
+    .about-item {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px;
+    }
+
+    .about-item strong {
+      display: block;
+      color: var(--dark);
+      margin-bottom: 3px;
+    }
+
+    .about-item span {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    /* WHAT I CAN DO */
+
+    .services {
+      background: white;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .service-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 25px;
+      transition: 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
+      border-color: #bfdbfe;
+    }
+
+    .service-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: #eff6ff;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      margin-bottom: 17px;
+    }
+
+    .service-card h3 {
+      color: var(--dark);
+      margin-bottom: 8px;
+      font-size: 19px;
+    }
+
+    .service-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* PROJECTS */
+
+    .projects {
+      background: #f8fafc;
+    }
+
+    .project-grid {
+      display: grid;
+      gap: 28px;
+    }
+
+    .project-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    .project-image {
+      height: 260px;
+      background: #e2e8f0;
+      overflow: hidden;
+    }
+
+    .project-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.4s;
+    }
+
+    .project-card:hover .project-image img {
+      transform: scale(1.03);
+    }
+
+    .project-content {
+      padding: 28px;
+    }
+
+    .project-number {
+      color: var(--primary);
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 5px;
+    }
+
+    .project-content h3 {
+      color: var(--dark);
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+
+    .project-content > p {
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .project-details {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .detail-box {
+      padding: 15px;
+      background: #f8fafc;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+    }
+
+    .detail-box strong {
+      display: block;
+      color: var(--dark);
+      font-size: 13px;
+      margin-bottom: 4px;
+    }
+
+    .detail-box span {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .insight {
+      padding: 18px;
+      background: #eff6ff;
+      border-left: 4px solid var(--primary);
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .insight strong {
+      color: var(--dark);
+    }
+
+    .insight p {
+      font-size: 14px;
+      color: var(--text);
+      margin-top: 4px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .tag {
+      padding: 6px 10px;
+      background: #f1f5f9;
+      border-radius: 999px;
+      font-size: 12px;
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .project-links {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    /* SKILLS */
+
+    .skills {
+      background: white;
+    }
+
+    .skill-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .skill-card {
+      padding: 25px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      transition: 0.3s;
+    }
+
+    .skill-card:hover {
+      box-shadow: var(--shadow);
+      transform: translateY(-3px);
+    }
+
+    .skill-card h3 {
+      color: var(--dark);
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+
+    .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+
+    .skill {
+      padding: 8px 12px;
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 13px;
+      color: var(--text);
+    }
+
+    /* EXPERIENCE */
+
+    .experience {
+      background: #f8fafc;
+    }
+
+    .timeline {
+      max-width: 900px;
+      margin: auto;
+      display: grid;
+      gap: 20px;
+    }
+
+    .timeline-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .timeline-card h3 {
+      color: var(--dark);
+      font-size: 21px;
+    }
+
+    .timeline-card .company {
+      color: var(--primary);
+      font-weight: 700;
+      margin: 4px 0;
+    }
+
+    .timeline-card .date {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 15px;
+    }
+
+    .timeline-card ul {
+      padding-left: 20px;
+      color: var(--muted);
+    }
+
+    /* ACHIEVEMENTS */
+
+    .achievement-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .achievement {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 25px;
+      text-align: center;
+    }
+
+    .achievement h3 {
+      color: var(--dark);
+      margin-bottom: 7px;
+      font-size: 18px;
+    }
+
+    .achievement p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* CERTIFICATIONS */
+
+    .certifications {
+      background: white;
+    }
+
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .cert-card {
+      padding: 22px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: #fff;
+    }
+
+    .cert-card h3 {
+      color: var(--dark);
+      font-size: 17px;
+      margin-bottom: 8px;
+    }
+
+    .cert-card p {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 12px;
+    }
+
+    .cert-label {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--primary);
+      background: #eff6ff;
+      padding: 5px 9px;
+      border-radius: 999px;
+    }
+
+    /* CTA */
+
+    .cta {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 36px;
+      margin-bottom: 12px;
+    }
+
+    .cta p {
+      max-width: 650px;
+      margin: auto auto 25px;
+      color: #cbd5e1;
+    }
+
+    /* CONTACT */
+
+    .contact {
+      background: #f8fafc;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .contact-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 25px;
+      text-align: center;
+    }
+
+    .contact-card h3 {
+      color: var(--dark);
+      margin-bottom: 7px;
+    }
+
+    .contact-card p {
+      color: var(--muted);
+      font-size: 14px;
+      word-break: break-word;
+    }
+
+    .contact-card a {
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #020617;
+      color: #94a3b8;
+      text-align: center;
+      padding: 25px 0;
+      font-size: 13px;
+    }
+
+    footer strong {
+      color: white;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 900px) {
+
+      .hero-grid,
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .service-grid,
+      .achievement-grid,
+      .cert-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .hero {
+        padding-top: 70px;
+      }
+    }
+
+    @media (max-width: 700px) {
+
+      .nav-container {
+        flex-direction: column;
+        padding: 15px 0;
+      }
+
+      .nav-links {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .nav-links a {
+        font-size: 12px;
+      }
+
+      .hero h1 {
+        font-size: 45px;
+      }
+
+      .hero h2 {
+        font-size: 20px;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .stats {
+        grid-template-columns: 1fr;
+      }
+
+      .service-grid,
+      .skill-grid,
+      .achievement-grid,
+      .cert-grid,
+      .contact-grid,
+      .project-details {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+
+      .section-heading h2 {
+        font-size: 30px;
+      }
+
+      .project-image {
+        height: 210px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
+  <!-- ================= NAVBAR ================= -->
 
-<nav>
-<div class="wrap nav">
+  <nav>
+    <div class="container nav-container">
 
-<a class="logo" href="#top">
-PARTHIBAN<b>.</b>
-</a>
+      <a href="#home" class="brand">
+        Parthiban V<span>.</span>
+      </a>
 
-<div class="navlinks">
-<a href="#about">About</a>
-<a href="#capabilities">What I Do</a>
-<a href="#work">Projects</a>
-<a href="#skills">Skills</a>
-<a href="#experience">Experience</a>
-<a href="#contact">Contact</a>
-</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">What I Do</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
 
-</div>
-</nav>
+    </div>
+  </nav>
 
 
-<!-- HERO -->
+  <!-- ================= HERO ================= -->
 
-<header id="top" class="hero">
+  <section class="hero" id="home">
 
-<div class="wrap hero-grid">
+    <div class="container hero-grid">
 
-<div>
+      <div>
 
-<div class="kicker">
-B.Com Computer Applications · 2026 Graduate
-</div>
+        <div class="badge">
+          OPEN TO ENTRY-LEVEL OPPORTUNITIES
+        </div>
 
-<h1>
-Analytics that turns<br>
-<span>data into direction.</span>
-</h1>
+        <h1>
+          Analytics that turns
+          <span>data into direction.</span>
+        </h1>
 
-<p class="lead">
-I'm Parthiban V — an analytics-focused graduate who transforms raw business data into structured reports, interactive dashboards and actionable insights using Excel, SQL and Power BI.
-</p>
+        <h2>
+          Data Analyst • MIS • Business Analytics
+        </h2>
 
-<div class="buttons">
+        <p>
+          I'm Parthiban V, a B.Com Computer Applications graduate
+          passionate about transforming raw data into meaningful
+          insights using Excel, SQL and Power BI.
+        </p>
 
-<a class="btn primary" href="#work">
-View Selected Work
-</a>
+        <div class="hero-buttons">
 
-<a class="btn" href="Parthiban_V_Resume.pdf" download>
-Download Resume
-</a>
+          <a href="Parthiban_V_Resume.pdf"
+             class="btn btn-primary"
+             target="_blank">
+            Download Resume
+          </a>
 
-<a class="btn" href="https://www.linkedin.com/in/parthibanv23" target="_blank" rel="noopener">
-LinkedIn ↗
-</a>
+          <a href="https://www.linkedin.com/in/parthibanv23"
+             class="btn btn-outline"
+             target="_blank">
+            LinkedIn
+          </a>
 
-<a class="btn" href="https://github.com/parthibanvofficial02" target="_blank" rel="noopener">
-GitHub ↗
-</a>
+          <a href="https://github.com/parthibanvofficial02"
+             class="btn btn-outline"
+             target="_blank">
+            GitHub
+          </a>
 
-</div>
+        </div>
 
-</div>
+      </div>
 
 
-<div class="mini">
+      <div class="hero-card">
 
-<strong>8.28</strong>
-<span>CGPA · B.Com (Computer Applications)</span>
+        <div class="profile-circle">
+          PV
+        </div>
 
-<br>
+        <h3>
+          Parthiban V
+        </h3>
 
-<strong>3</strong>
-<span>Business analytics projects</span>
+        <p>
+          B.Com Computer Applications · 2026 Graduate
+        </p>
 
-<br>
+        <div class="stats">
 
-<strong>1</strong>
-<span>Data Analytics Internship</span>
+          <div class="stat">
+            <strong>8.28</strong>
+            <span>CGPA</span>
+          </div>
 
-</div>
+          <div class="stat">
+            <strong>3+</strong>
+            <span>Analytics Projects</span>
+          </div>
 
-</div>
+          <div class="stat">
+            <strong>4+</strong>
+            <span>Core Tools</span>
+          </div>
 
+        </div>
 
-<div class="wrap metrics">
+      </div>
 
-<div class="metric">
-<strong>Excel</strong>
-<span>Advanced reporting toolkit</span>
-</div>
+    </div>
 
-<div class="metric">
-<strong>SQL</strong>
-<span>MySQL data analysis</span>
-</div>
+  </section>
 
-<div class="metric">
-<strong>Power BI</strong>
-<span>Interactive dashboards</span>
-</div>
 
-<div class="metric">
-<strong>ApproTech</strong>
-<span>Data Analytics Intern</span>
-</div>
+  <!-- ================= ABOUT ================= -->
 
-</div>
+  <section id="about">
 
-</header>
+    <div class="container">
 
+      <div class="section-heading">
+        <span>About Me</span>
+        <h2>Business-minded analytics professional</h2>
+        <p>
+          I combine business understanding with data analytics
+          to support better reporting, decision-making and
+          operational improvements.
+        </p>
+      </div>
 
-<!-- ABOUT -->
 
-<section id="about">
+      <div class="about-grid">
 
-<div class="wrap">
+        <div class="about-text">
 
-<div class="section-head">
+          <h3>
+            Turning business questions into data-driven answers
+          </h3>
 
-<div>
+          <p>
+            I am a B.Com Computer Applications graduate from
+            S.I.V.E.T. College, University of Madras, with a strong
+            interest in Data Analytics, MIS Reporting, Business
+            Intelligence and Operations Analytics.
+          </p>
 
-<h2 class="section-title">
-Profile
-</h2>
+          <p>
+            My practical experience includes working with Excel,
+            SQL/MySQL and Power BI to clean data, analyze trends,
+            create dashboards and communicate business insights.
+          </p>
 
-<p class="section-sub">
-Business-oriented analytics profile with a practical focus on reporting, data quality, dashboard development and decision support.
-</p>
+          <p>
+            I enjoy solving real-world business problems through
+            structured analysis and clear reporting rather than
+            simply working with tools.
+          </p>
 
-</div>
+        </div>
 
-</div>
 
+        <div class="about-list">
 
-<div class="about">
+          <div class="about-item">
+            <strong>🎓 Education</strong>
+            <span>
+              B.Com Computer Applications · S.I.V.E.T. College
+            </span>
+          </div>
 
-<div class="card">
+          <div class="about-item">
+            <strong>📊 Focus Areas</strong>
+            <span>
+              Data Analytics · MIS · Reporting · BI · Operations
+            </span>
+          </div>
 
-<p>
-I am a B.Com (Computer Applications) graduate from S.I.V.E.T. College, University of Madras. My foundation combines commerce and business understanding with hands-on analytics skills in Microsoft Excel, SQL (MySQL), Power BI and Tally Prime.
-</p>
+          <div class="about-item">
+            <strong>💼 Career Goal</strong>
+            <span>
+              Data Analyst / MIS / Business Analytics roles
+            </span>
+          </div>
 
-<p>
-I enjoy turning raw business data into structured reports, dashboards and insights that are easier for teams to understand and act on.
-</p>
+          <div class="about-item">
+            <strong>📍 Availability</strong>
+            <span>
+              Open to entry-level opportunities and relocation
+            </span>
+          </div>
 
-<ul class="checklist">
+        </div>
 
-<li>Business-focused data analysis</li>
+      </div>
 
-<li>Excel-based MIS and reporting</li>
+    </div>
 
-<li>SQL data extraction and analysis</li>
+  </section>
 
-<li>Power BI dashboard development</li>
 
-<li>Operations and performance analytics</li>
+  <!-- ================= WHAT I CAN DO ================= -->
 
-</ul>
-
-</div>
-
-
-<div class="quote">
-
-<p>
-"Clean data. Clear reporting. Better business decisions."
-</p>
-
-<small>
-Focus areas: Data Analytics · Reporting · Operations · Business Intelligence · MIS
-</small>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- WHAT I CAN DO -->
-
-<section id="capabilities">
-
-<div class="wrap">
-
-<div class="section-head">
-
-<div>
-
-<h2 class="section-title">
-What I Can Do
-</h2>
-
-<p class="section-sub">
-Practical analytics capabilities I can apply to reporting, business and operations-focused roles.
-</p>
-
-</div>
-
-</div>
-
-
-<div class="capabilities">
-
-<div class="capability-card">
-
-<div class="capability-icon">📊</div>
-
-<h3>
-Data Analysis
-</h3>
-
-<p>
-Analyze business data to identify trends, patterns, performance gaps and opportunities for better decision-making.
-</p>
-
-</div>
-
-
-<div class="capability-card">
-
-<div class="capability-icon">🧹</div>
-
-<h3>
-Data Cleaning
-</h3>
-
-<p>
-Clean, validate, transform and prepare raw datasets using Excel and Power Query for reliable analysis.
-</p>
-
-</div>
-
-
-<div class="capability-card">
-
-<div class="capability-icon">🗄️</div>
-
-<h3>
-SQL Analytics
-</h3>
-
-<p>
-Use SQL joins, aggregations, CTEs, subqueries and window functions to extract meaningful business insights.
-</p>
-
-</div>
-
-
-<div class="capability-card">
-
-<div class="capability-icon">📈</div>
-
-<h3>
-Dashboard Development
-</h3>
-
-<p>
-Build interactive Power BI dashboards with KPIs, slicers, data models and business-focused visualizations.
-</p>
-
-</div>
-
-
-<div class="capability-card">
-
-<div class="capability-icon">📋</div>
-
-<h3>
-MIS & Reporting
-</h3>
-
-<p>
-Create structured MIS reports and management-ready summaries using Excel, Pivot Tables and Power BI.
-</p>
-
-</div>
-
-
-<div class="capability-card">
-
-<div class="capability-icon">💼</div>
-
-<h3>
-Business & Operations Analytics
-</h3>
-
-<p>
-Use data to understand sales, transactions, customers, operations and performance to support business decisions.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- PROJECTS -->
-
-<section id="work">
-
-<div class="wrap">
-
-<div class="section-head">
-
-<div>
-
-<h2 class="section-title">
-Selected Work
-</h2>
-
-<p class="section-sub">
-Practical projects demonstrating data cleaning, SQL analysis, reporting and interactive dashboard development.
-</p>
-
-</div>
-
-</div>
-
-
-<div class="grid3">
-
-
-<!-- BLINKIT -->
-
-<article class="card">
-
-<img
-class="proj-img"
-src="https://raw.githubusercontent.com/parthibanvofficial02/blinkit-retail-analytics/main/blinkit-dashboard.png"
-alt="Blinkit retail analytics dashboard preview"
-loading="lazy"
->
-
-<span class="number">
-01 · RETAIL ANALYTICS
-</span>
-
-<h3>
-Blinkit Retail Sales & Inventory Analytics
-</h3>
-
-<p>
-Built a retail analytics dashboard to understand sales performance, outlet-level trends, product categories and inventory-related metrics.
-</p>
-
-<div class="case">
-
-<b>OBJECTIVE</b>
-
-<div>
-Convert raw retail data into an interactive dashboard for performance monitoring and business analysis.
-</div>
-
-</div>
-
-
-<div class="case">
-
-<b>WHAT I DID</b>
-
-<div>
-Cleaned and transformed data using Excel and Power Query, performed analysis and developed an interactive Power BI dashboard.
-</div>
-
-</div>
-
-
-<div class="case">
-
-<b>FOCUS</b>
-
-<div>
-Outlet performance · Category trends · Inventory reporting
-</div>
-
-</div>
-
-
-<div class="case">
-
-<b>SCALE</b>
-
-<div>
-8 linked datasets — orders, inventory, delivery & marketing performance
-</div>
-
-</div>
-
-
-<div class="insights">
-
-<b>KEY INSIGHTS</b>
-
-<ul>
-
-<li>Compared performance across different outlet segments.</li>
-
-<li>Analyzed category-level sales contribution.</li>
-
-<li>Evaluated retail performance using dashboard KPIs.</li>
-
-</ul>
-
-</div>
-
-
-<div class="tags">
-
-<span class="tag">Excel</span>
-<span class="tag">Power Query</span>
-<span class="tag">Power BI</span>
-<span class="tag">Dashboard</span>
-
-</div>
-
-
-<div class="proj-links">
-
-<a
-href="https://github.com/parthibanvofficial02/blinkit-retail-analytics"
-target="_blank"
-rel="noopener"
->
-GitHub ↗
-</a>
-
-<a
-href="https://github.com/parthibanvofficial02/blinkit-retail-analytics/blob/main/blinkit-dashboard.png"
-target="_blank"
-rel="noopener"
->
-Dashboard ↗
-</a>
-
-</div>
-
-</article>
-
-
-<!-- PHONEPE -->
-
-<article class="card">
-
-<span class="number">
-02 · PAYMENT ANALYTICS
-</span>
-
-<h3>
-PhonePe Digital Payment Analytics
-</h3>
-
-<p>
-Analyzed digital payment transactions and user activity using MySQL and Excel to identify transaction trends and business performance patterns.
-</p>
-
-
-<div class="case">
-
-<b>OBJECTIVE</b>
-
-<div>
-Understand transaction volume, transaction value and user activity through structured SQL analysis and Excel reporting.
-</div>
-
-</div>
-
-
-<div class="case">
-
-<b>WHAT I DID</b>
-
-<div>
-Cleaned and validated data, wrote SQL queries, performed aggregations and created Pivot Table reports for business analysis.
-</div>
-
-</div>
-
-
-<div class="case">
-
-<b>FOCUS</b>
-
-<div>
-Transactions · Trends · Customer activity · Transaction value
-</div>
-
-</div>
-
-
-<div class="case">
-
-<b>SCALE</b>
-
-<div>
-300K+ transaction records · 107K+ user records analyzed
-</div>
-
-</div>
-
-
-<div class="insights">
-
-<b>KEY INSIGHTS</b>
-
-<ul>
-
-<li>Analyzed transaction trends across different periods.</li>
-
-<li>Compared user activity and transaction behavior.</li>
-
-<li>Identified high-value transaction segments.</li>
-
-</ul>
-
-</div>
-
-
-<div class="tags">
-
-<span class="tag">MySQL</span>
-<span class="tag">SQL</span>
-<span class="tag">Excel</span>
-<span class="tag">Pivot Tables</span>
-
-</div>
-
-
-<div class="proj-links">
-
-<!-- Replace the placeholder URL below with your actual PhonePe GitHub repository -->
-
-<a
-href="https://github.com/parthibanvofficial02"
-target="_blank"
-rel="noopener"
->
-GitHub ↗
-</a>
-
-</div>
-
-<p class="proj-note">
-PhonePe project repository link can be updated once the dedicated GitHub repository is published.
-</p>
-
-</article>
-
-
-<!-- UBER -->
-
-<article class="card">
-
-<img
-class="proj-img"
-src="https://raw.githubusercontent.com/parthibanvofficial02/uber-operations-dashboard/main/screenshot.png"
-alt="Uber operations performance dashboard preview"
-loading="lazy"
->
-
-<span class="number">
-03 · OPERATIONS ANALYTICS
-</span>
-
-<h3>
-Uber Operations Performance Dashboard
-</h3>
-
-<p>
-Developed an operations dashboard to monitor ride demand, bookings, cancellations and overall booking performance.
-</p>
-
-
-<div class="case">
-
-<b>OBJECTIVE</b>
-
-<div>
-Analyze ride-booking data and convert operational metrics into an interactive Power BI dashboard.
-</div>
-
-</div>
-
-
-<div class="case">
-
-<b>WHAT I DID</b>
-
-<div>
-Prepared the dataset, used SQL for analysis and created Power BI visuals to monitor operational KPIs.
-</div>
-
-</div>
-
-
-<div class="case">
-
-<b>FOCUS</b>
-
-<div>
-Demand · Bookings · Cancellations · Performance
-</div>
-
-</div>
-
-
-<div class="case">
-
-<b>SCALE</b>
-
-<div>
-150,000-row NCR ride bookings dataset analyzed with SQL
-</div>
-
-</div>
-
-
-<div class="insights">
-
-<b>KEY INSIGHTS</b>
-
-<ul>
-
-<li>Analyzed ride demand and booking patterns.</li>
-
-<li>Evaluated cancellation trends.</li>
-
-<li>Compared operational performance across segments.</li>
-
-</ul>
-
-</div>
-
-
-<div class="tags">
-
-<span class="tag">SQL</span>
-<span class="tag">MySQL</span>
-<span class="tag">Power BI</span>
-<span class="tag">Dashboard</span>
-
-</div>
-
-
-<div class="proj-links">
-
-<a
-href="https://github.com/parthibanvofficial02/uber-operations-dashboard"
-target="_blank"
-rel="noopener"
->
-GitHub ↗
-</a>
-
-<a
-href="https://github.com/parthibanvofficial02/uber-operations-dashboard/blob/main/screenshot.png"
-target="_blank"
-rel="noopener"
->
-Dashboard ↗
-</a>
-
-</div>
-
-</article>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- SKILLS -->
-
-<section id="skills">
-
-<div class="wrap">
-
-<div class="section-head">
-
-<div>
-
-<h2 class="section-title">
-Technical Toolkit
-</h2>
-
-<p class="section-sub">
-Core tools and capabilities aligned with Data Analyst, MIS, Reporting and Operations-focused fresher roles.
-</p>
-
-</div>
-
-</div>
-
-
-<div class="two">
-
-
-<div class="skillbox">
-
-<h3>
-Microsoft Excel
-</h3>
-
-<div class="chips">
-
-<span class="chip">Pivot Tables</span>
-<span class="chip">Pivot Charts</span>
-<span class="chip">XLOOKUP</span>
-<span class="chip">VLOOKUP</span>
-<span class="chip">INDEX-MATCH</span>
-<span class="chip">Power Query</span>
-<span class="chip">Data Cleaning</spa
+  <section class="serv
+    
