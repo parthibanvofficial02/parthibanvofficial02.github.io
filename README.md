@@ -2,8 +2,8 @@
 
 Data Analyst | MIS Analyst | Reporting Analyst | Business Analyst
 
-""Portfolio" (https://img.shields.io/badge/Portfolio-Visit%20Website-black?style=for-the-badge)" (https://parthibanvofficial02.github.io/)
-""LinkedIn" (https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge)" (https://www.linkedin.com/in/parthibanv23)
+""Portfolio" (https://parthibanvofficial02.github.io/)
+""LinkedIn" (https://www.linkedin.com/in/parthibanv23)
 
 ---
 
